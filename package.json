@@ -10,7 +10,10 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@daym3l/react-profile-image": "^1.3.2",
+    "@dsalvagni/react-profile-picture": "^1.0.1",
     "autoprefixer": "^10.4.19",
+    "cool-react-image-upload": "^1.1.5",
     "html-to-canvas": "^0.0.11",
     "html2canvas": "^1.4.1",
     "postcss": "^8.4.38",
@@ -18,6 +21,7 @@
     "react-avatar-editor": "^13.0.2",
     "react-dom": "^18.2.0",
     "react-dropzone": "^14.2.3",
+    "react-image-easy-upload": "^1.0.4",
     "react-images-uploading": "^3.1.7",
     "react-uploader": "^3.43.0"
   },

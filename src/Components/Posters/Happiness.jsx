@@ -5,11 +5,25 @@ import html2canvas from 'html2canvas';
 const Happiness = () => {
   const [title, setTitle] = useState('Happiness Program');
   const [subtitle, setSubtitle] = useState('Learn powerful scientific breathing technique  SKY');
+  const [Teachersname, setTeachersName] = useState('Rohit Dharma');
+  const [Teacherstitle, setTeacherstitle] = useState('(ArtofLiving Faculty)');
   const [link, setLink] = useState('tiny.cc/link');
   const [date, setDate] = useState('29 May 2024');
   const [time, setTime] = useState('7AM- 10AM');
   const [contact, setContact] = useState('9810553757');
   const [venue, setVenue] = useState('Bangalore Ashram');
+  const [imagePreview, setImagePreview] = useState(null);
+
+  const handleImageChange = (event) => {
+    const file = event.target.files[0];
+    if (file) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setImagePreview(reader.result);
+      };
+      reader.readAsDataURL(file);
+    }
+  };
 
  
 
@@ -31,7 +45,11 @@ const Happiness = () => {
       console.error('Poster element not found');
     }
   };
-
+  const styles = {
+    container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
+    imagePreviewContainer: { width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', marginTop: '110px', marginLeft: '100px', border: '2px solid black', position: 'relative',},
+    imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
+  };
   
 
 
@@ -45,11 +63,20 @@ const Happiness = () => {
       <div id="poster" className='firstdiv' style={{ width: '500px', height: '419px', border: '1px solid #000', padding: '20px' }}>
         <h1 id='course-title'>{title}</h1>
         <h5 id='subtitle'>{subtitle}</h5>
+        <h5 id='Teachersname'>{Teachersname}<br/>{Teacherstitle}</h5>
         <h5 id='link'>{link}</h5>
         <h5 id='date'>{date}</h5>
         <h5 id='time'>{time}</h5>
         <h5 id='contact'>{contact}</h5>
         <h5 id='venue'>{venue}</h5>
+       
+        <div style={styles.container}>
+      {imagePreview && (
+        <div style={styles.imagePreviewContainer}>
+          <img src={imagePreview} alt="Preview" style={styles.imagePreview} />
+        </div>
+      )}
+    </div>
        
 
       </div>
@@ -74,6 +101,13 @@ const Happiness = () => {
                     type="text" 
                     value={subtitle}
                     onChange={(e) => setSubtitle(e.target.value)}
+                />
+            </label>
+            <label>Enter Teachers Name:
+                <input
+                    type="text" 
+                    value={Teachersname}
+                    onChange={(e) => setTeachersName(e.target.value)}
                 />
             </label>
             <label>Enter your link:
@@ -111,6 +145,7 @@ const Happiness = () => {
                     onChange={(e) => setVenue(e.target.value)}
                 />
             </label>
+            <input type="file" accept="image/*" onChange={handleImageChange} />
         
 
         </form>
@@ -128,6 +163,7 @@ const Happiness = () => {
   
   );
 };
+
 
 
 export default Happiness;
