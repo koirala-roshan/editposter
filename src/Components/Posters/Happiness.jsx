@@ -145,7 +145,12 @@ const Happiness = () => {
                     onChange={(e) => setVenue(e.target.value)}
                 />
             </label>
+            <label>
+              Select Teachers Photo
+            
             <input type="file" accept="image/*" onChange={handleImageChange} />
+            </label>
+
         
 
         </form>
