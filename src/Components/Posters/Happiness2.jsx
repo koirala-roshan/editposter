@@ -88,7 +88,7 @@ const Happiness2 = () => {
       
 
       <div className="form-container">
-      <h1>Enter Your Details Here</h1>
+      <h1 >Enter Your Details Here</h1>
         <form>
            
             <label>Enter Teachers Name:
