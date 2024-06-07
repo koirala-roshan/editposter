@@ -102,14 +102,19 @@ const Happiness = () => {
                     value={subtitle}
                     onChange={(e) => setSubtitle(e.target.value)}
                 />
-            </label>
+            </label> 
             <label>Enter Teachers Name:
                 <input
                     type="text" 
+                
                     value={Teachersname}
                     onChange={(e) => setTeachersName(e.target.value)}
                 />
+               
+           
+                
             </label>
+            
             <label>Enter your link:
                 <input
                     type="text" 

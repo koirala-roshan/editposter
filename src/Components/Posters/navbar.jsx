@@ -10,8 +10,8 @@ const Navbar = () => {
   
       
 
-    <div className='container'>
-      <div class="topnav">
+   
+      <div class="topnav" width="100%">
   <a class="#" onClick={Happiness}>Happiness Program</a>
   <a class="#" href="#">Sahaj Samadhi</a>
   <a href="#">Kids Program</a>
@@ -23,7 +23,7 @@ const Navbar = () => {
      
 
 
-      </div>
+ 
 
 
 

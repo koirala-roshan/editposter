@@ -19,7 +19,7 @@ function App() {
         
         <Navbar />
         <Happiness />
-        <hr />
+
         <Happiness2 />
       
      

@@ -1,27 +1,5 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
+ #root {
+  margin: 0;
+  padding: 0;
+} 
 
-#poster {
-  font-family: 'Arial, sans-serif';
-  text-align: center;
-}
-
-#poster h1 {
-  font-size: 3em;
-  margin: 0.5em 0;
-}
-
-#poster h2 {
-  font-size: 2em;
-  margin: 0.5em 0;
-}
-hr{
-  color: #04AA6D;
- 
-  width: 100%;
-  size: 5;
-}
