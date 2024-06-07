@@ -2,15 +2,15 @@ import React, { useState,useRef } from 'react';
 import html2canvas from 'html2canvas';
 
 
-const Happiness = () => {
-  const [title, setTitle] = useState('Happiness Program');
-  const [subtitle, setSubtitle] = useState('Learn powerful scientific breathing technique  SKY');
+const Happiness2 = () => {
+
+ 
   const [Teachersname, setTeachersName] = useState('Rohit Dharma');
   const [Teacherstitle, setTeacherstitle] = useState('(ArtofLiving Faculty)');
   const [link, setLink] = useState('tiny.cc/link');
-  const [date, setDate] = useState('29 May 2024');
+  const [date, setDate] = useState('29-30 May 2024');
   const [time, setTime] = useState('7AM- 10AM');
-  const [contact, setContact] = useState('9810553757');
+  const [contact, setContact] = useState('Call for more information: 981053757, 9810553757');
   const [venue, setVenue] = useState('Bangalore Ashram');
   const [imagePreview, setImagePreview] = useState("./hp.jpg");
 
@@ -29,14 +29,14 @@ const Happiness = () => {
 
 
 
-  const downloadPoster = async () => {
-    const poster = document.getElementById('poster');
+  const downloadPoster2 = async () => {
+    const poster = document.getElementById('poster1');
     if (poster) {
       try { 
         const canvas = await html2canvas(poster);
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpg');
-        link.download = 'design.jpg';
+        link.download = 'design2.jpg';
         link.click();
       } catch (error) {
         console.error('Error generating canvas: ', error);
@@ -46,8 +46,8 @@ const Happiness = () => {
     }
   };
   const styles = {
-    container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', marginTop: '110px', marginLeft: '100px', border: '2px solid black', position: 'relative',},
+    container: {   display: 'flex', flexDirection: 'column', alignItems: 'center'}, 
+    imagePreviewContainer: { width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', marginTop: '83px',marginRight:'52%', border: '2px solid black', position: 'relative'},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -60,16 +60,17 @@ const Happiness = () => {
 
     <div className='container'>
     
-      <div id="poster" className='firstdiv' style={{ width: '500px', height: '419px', border: '1px solid #000', padding: '20px' }}>
-        <h1 id='course-title'>{title}</h1>
-        <h5 id='subtitle'>{subtitle}</h5>
-        <h5 id='Teachersname'>{Teachersname}<br/>{Teacherstitle}</h5>
-        <h5 id='link'>{link}</h5>
+      <div id="poster1" className='firstdiv' style={{ width: '525px', height: '534px', border: '1px solid #000', padding: '20px' }}>
+      
+        <h5 id='Teachersname1'>{Teachersname}<br/>{Teacherstitle}</h5>
+        {/* <h5 id='link'>{link}</h5>
         <h5 id='date'>{date}</h5>
         <h5 id='time'>{time}</h5>
-        <h5 id='contact'>{contact}</h5>
-        <h5 id='venue'>{venue}</h5>
-       
+        <h5 id='contact'>{contact}</h5> */}
+        <h5 id='contact1'>{contact}</h5>
+        <h5 id='venue1'>{venue}</h5>
+        <h5 id='time1'>{time}</h5>
+        <h5 id='date1'>{date}</h5>
         <div style={styles.container}>
       {imagePreview && (
         <div style={styles.imagePreviewContainer}>
@@ -89,20 +90,7 @@ const Happiness = () => {
       <div className="form-container">
       <h1>Enter Your Details Here</h1>
         <form>
-            <label>Enter your name Title:
-                <input
-                    type="text" 
-                    value={title}
-                    onChange={(e) => setTitle(e.target.value)}
-                />
-            </label>
-            <label>Enter your name Subtitle:
-                <input
-                    type="text" 
-                    value={subtitle}
-                    onChange={(e) => setSubtitle(e.target.value)}
-                />
-            </label>
+           
             <label>Enter Teachers Name:
                 <input
                     type="text" 
@@ -154,7 +142,7 @@ const Happiness = () => {
         
 
         </form>
-        <button  id="button" onClick={downloadPoster}>Download Poster</button>
+        <button  id="button" onClick={downloadPoster2}>Download Poster</button>
     </div>
   
      
@@ -171,4 +159,4 @@ const Happiness = () => {
 
 
 
-export default Happiness;
+export default Happiness2;

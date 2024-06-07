@@ -1,4 +1,5 @@
 import React from 'react';
+import Happiness from './Happiness';
 
 
 
@@ -11,7 +12,7 @@ const Navbar = () => {
 
     <div className='container'>
       <div class="topnav">
-  <a class="#" href="#">Happiness Program</a>
+  <a class="#" onClick={Happiness}>Happiness Program</a>
   <a class="#" href="#">Sahaj Samadhi</a>
   <a href="#">Kids Program</a>
   <a href="#">Advance Programs</a>
