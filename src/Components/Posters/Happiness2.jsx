@@ -12,7 +12,7 @@ const Happiness2 = () => {
   const [time, setTime] = useState('7AM- 10AM');
   const [contact, setContact] = useState('Call for more information: 981053757, 9810553757');
   const [venue, setVenue] = useState('Bangalore Ashram');
-  const [imagePreview, setImagePreview] = useState("./hp.jpg");
+  const [imagePreview, setImagePreview] = useState("./sample.jpg");
 
   const handleImageChange = (event) => {
     const file = event.target.files[0];
