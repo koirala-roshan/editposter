@@ -5,7 +5,7 @@ import Navbar from './Components/Posters/navbar.jsx'
 import Happiness2 from './Components/Posters/Happiness2.jsx'
 import Landing from './Components/Posters/landingpage.jsx'
 
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 
 
@@ -13,19 +13,35 @@ import Landing from './Components/Posters/landingpage.jsx'
 
 function App() {
 
+  const router =createBrowserRouter([
+
+    {
+      path: "/editposter",
+      element: <><Happiness /></> 
+    },
+    {
+      path:"/",
+      element: <Landing/>
+    },
+    {
+    path: "/editposter2",
+  element: <Happiness2 />
+}
+  ])
   return (
    
       <div>
-        
-        <Navbar />
+        {/* <Landing/> */}
+        {/* <Navbar />
         <Happiness />
 
         <Happiness2 />
-      
+       */}
      
+     <RouterProvider router ={router}/>
      
       </div>
-        
+      
       
      
   )
