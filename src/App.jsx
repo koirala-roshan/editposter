@@ -5,8 +5,9 @@ import Navbar from './Components/Posters/navbar.jsx'
 import Happiness2 from './Components/Posters/Happiness2.jsx'
 import Landing from './Components/Posters/landingpage.jsx'
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'                  
+import Followup1 from './Components/Posters/followup1.jsx'
+import Happiness3 from './Components/Posters/Happiness3.jsx'
 
 
 
@@ -26,6 +27,14 @@ function App() {
     {
     path: "/editposter2",
   element: <Happiness2 />
+},
+{
+  path: "/editposter3",
+element: <Followup1 />
+},
+{
+  path: "/editposter4",
+element: <Happiness3 />
 }
   ])
   return (
@@ -37,8 +46,10 @@ function App() {
 
         <Happiness2 />
        */}
-     
-     <RouterProvider router ={router}/>
+      
+         <RouterProvider router ={router}/>
+       
+
      
       </div>
       

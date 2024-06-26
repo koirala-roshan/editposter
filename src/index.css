@@ -1,6 +1,8 @@
 
 body{
   margin: 0px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 .container{
 float: center;
@@ -354,15 +356,191 @@ input[type="text"]:focus {
 .firstdiv
 {
 float: left;
+margin: auto;
 margin-top: 20px;
+}
+.cf{
+  align-items: center;
 }
 .card
 {
   width: 18rem;
-  height: 30rem;
+  height: 22rem;
   text-align: center;
-  margin-top: 20%;
+  margin: 1%;
   float: left;
-  margin-left: 10px;
  
+
+ 
+}
+
+.texthero h1{
+  text-align: center;
+  color: hwb(0 100% 0%);
+  font-family: Impact, fantasy;
+}
+
+.texthero p{
+  text-align: center;
+  color: hwb(0 100% 0%);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.hero-img{
+
+  width: 100%;
+  height: 15vh;
+  background-image: linear-gradient(to bottom right, #845EC2, #D65DB1);
+
+}
+
+.editor
+{
+  font-size: 50px;
+  font-family: Brush Script MT, Brush Script Std, cursive;
+}
+
+
+/* followup */
+
+#datef {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 15px;
+  bottom: 10.5%;
+  left: 72.5%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+#timef {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 100px;
+  font-size: 15px;
+  bottom: 6.5%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif;
+   
+}
+#teachersnamef {
+  position: absolute;
+  text-align: center;
+  font-family:'poppins';
+  line-height: 12px;
+  font-size: 20px;
+  width: 200px;
+  bottom: 60%;
+  left: 51%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #716d5d;
+  margin: 0px;
+  padding: 0px;
+   
+}
+#posterf {
+  font-family: 'poppins';
+  background-image: url(/followup1.jpg);
+  width: 100%;
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+/* happiness4 */
+
+
+#date4 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 15px;
+  bottom: 1%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+#link4 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 150px;
+  font-size: 15px;
+  text-align: left;
+  top: 35%;
+  left: 16.5%;
+  transform: translate(-50%, -50%);
+  color: hwb(340 5% 31%);
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif;
+   
+}
+
+#contact4
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 15px;
+  bottom: 1%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 100% 0%);
+  margin: 0px;
+  padding: 0px;
+  font-family:Arial, Helvetica, sans-serif;
+}
+#teachersname4 {
+  position: absolute;
+  text-align: center;
+  font-family:'Arial, Helvetica, sans-serif';
+  line-height: 12px;
+  font-size: 15px;
+  width: 200px;
+  bottom: 20%;
+  left: 15%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #716d5d;
+  margin: 0px;
+  padding: 0px;
+   
+}
+#poster3 {
+  font-family: 'poppins';
+  background-image: url(/hppp.jpg);
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+:root {
+  scroll-behavior: smooth;
 }

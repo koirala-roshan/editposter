@@ -13,12 +13,14 @@
     "@popperjs/core": "^2.11.8",
     "autoprefixer": "^10.4.19",
     "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "html-to-canvas": "^0.0.11",
     "html2canvas": "^1.4.1",
     "postcss": "^8.4.38",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-heaven-scroll": "^1.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
