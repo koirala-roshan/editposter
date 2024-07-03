@@ -11,7 +11,7 @@ const Landing = () => {
 
 
 <h1 className="niceh1">Hi I am Flier Editor <span className="dd">Powered by SSPT</span></h1>
-<p className="cclp container text-center mb-4">This is the place your you can edit your fliers for th program. Specially designed to help volunteers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
+<p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
       
       <Tabs 
         defaultActiveKey="happiness" 
