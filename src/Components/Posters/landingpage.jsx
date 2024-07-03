@@ -6,30 +6,37 @@ import { Link, NavLink } from "react-router-dom";
 const Landing = () => {
   return (
     <>
-      <div className="hero-img">
-        <div className="texthero">
-          <h1 className="">
-            Hi, I am <span className="editor">flyer editor</span>
-          </h1>
-          <p className="">
-            {" "}
-            Designed by:{" "}
-            <a
-              href="https://artofliving.store/"
-              target="_blank"
-              className="text-white"
-            >
-              Sri Sri Publications Trust
-            </a>{" "}
-            for your convenience.
-          </p>
+ <nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id=""/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+                
+            </div>
+            <ul class="menu-items">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Latest News</a></li>
+                <li><a href="#">Services</a></li>
+            </ul>
+                
+            <h4>SSPT</h4>
         </div>
-      </div>
+    </nav>
 
+
+
+
+<h1 className="niceh1">Hi I am Flier Editor <span className="dd">Powered by SSPT</span></h1>
+<p className="cclp container text-center mb-4">This is the place your you can edit your fliers for th program. Specially designed to help volunteers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
+      
       <Tabs 
         defaultActiveKey="happiness" 
         id="uncontrolled-tab-example"
-        className="mb-3 justify-content-center newtabs"
+        className="mb-3 justify-content-center ntabs"
       >
         <Tab eventKey="happiness" title="Happiness Program">
           <div className="container-fluid">
@@ -169,6 +176,111 @@ const Landing = () => {
           </div>
         </Tab>
       </Tabs>
+
+
+      {/* Footer */}
+
+      <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>21st KM, Udayapura Post, Kanakapura Rd, Bengaluru, Karnataka 560082</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>+91 7411057770</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>support@artofliving.store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo">
+                              <h1 className="text-white">Art of Living Store</h1>
+                            </div>
+                            <div class="footer-text">
+                                <p>We promote peace through diverse humanitarian projects, including conflict resolution, disaster relief, sustainable rural development, empowerment of women, prisoner rehabilitation, education for all, and environmental sustainability.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="bi bi-facebook"></i></a>
+                                <a href="#"><i class="bi bi-twitter"></i></a>
+                                <a href="#"><i class=" bi bi-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">about</a></li>
+
+                            
+                                <li><a href="#">Contact</a></li>
+                                <li><a href="#">About us</a></li>
+                                <li><a href="#">Our Services</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address"/>
+                                    <button><i class="bi bi-envelope envelope"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://artofliving.store/">Sri Sri Publications Trust</a></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </footer>
     </>
   );
 };
