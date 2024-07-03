@@ -6,26 +6,6 @@ import { Link, NavLink } from "react-router-dom";
 const Landing = () => {
   return (
     <>
- <nav class="navbar">
-        <div class="navbar-container container">
-            <input type="checkbox" name="" id=""/>
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
-                
-            </div>
-            <ul class="menu-items">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li><a href="#">Latest News</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-                
-            <h4>SSPT</h4>
-        </div>
-    </nav>
 
 
 
