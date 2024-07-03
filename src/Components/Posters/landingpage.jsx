@@ -198,7 +198,7 @@ const Landing = () => {
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                              <h1 className="text-white">Art of Living Store</h1>
+                              <h2 className="text-white">Sri Sri Publications Trust</h2>
                             </div>
                             <div class="footer-text">
                                 <p>We promote peace through diverse humanitarian projects, including conflict resolution, disaster relief, sustainable rural development, empowerment of women, prisoner rehabilitation, education for all, and environmental sustainability.</p>
