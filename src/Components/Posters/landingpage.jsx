@@ -86,12 +86,13 @@ const Landing = () => {
         <Tab eventKey="sahaj" title="Sahaj Samadhi Meditation">
           <div className="container">
             <div className="row mt-3 justify-content-center">
-              <div className="card col-md-3">
+              <div className="card col-md-3 mt-3">
                 <img
                   src="./s1.jpg"
-                  class="card-img-top"
+                  class="card-img-top mt-3"
                   alt="..."
-                  height="290rem"
+                   height="120"
+                  width="120rem"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Happiness Program</h5>
@@ -110,12 +111,13 @@ const Landing = () => {
         <Tab eventKey="yoga" title="Sri Sri Yoga">
           <div className="container">
             <div className="row mt-3 justify-content-center">
-              <div className="card col-md-3">
+              <div className="card col-md-3 mb-3 mt-3">
                 <img
                   src="./followup1.jpg"
                   class="card-img-top"
                   alt="..."
-                  height="290rem"
+                                    height="120"
+                  width="120rem"
                 />
                 <div className="card-body">
                   <h5 className="card-title">Happiness Program</h5>
@@ -133,16 +135,17 @@ const Landing = () => {
         </Tab>
         <Tab eventKey="followup" title="Follow Up">
           <div className="container">
-            <div className="row mt-3 justify-content-center">
+            <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
                 <img
                   src="./followup1.jpg"
                   class="card-img-top"
                   alt="..."
-                  height="290rem"
+                                height="150"
+                  width="120rem"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Happiness Program</h5>
+                  <h5 className="card-title">Follow Up</h5>
                   <p className="card-text">
                     You can edit phot, date, time, location and more in this
                     design
