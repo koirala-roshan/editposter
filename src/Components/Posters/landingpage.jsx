@@ -10,7 +10,7 @@ const Landing = () => {
 
 
 
-<h1 className="niceh1">Hi I am Flier Editor <span className="dd">Powered by SSPT</span></h1>
+<h1 className="niceh1"> <img src="./logo.avif" className="img-fluid"/> Hi I am Flier Editor <span className="dd">Powered by SSPT</span></h1>
 <p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
       
       <Tabs 
@@ -23,16 +23,16 @@ const Landing = () => {
             <div className="row mt-3 justify-content-center">
               <div className="card">
                 <img
-                  src="./s1.jpg"
+                  src="./frontcover.jpg"
                   class="card-img-top mt-3"
                   alt="..."
-                  height="150"
-                  width="120rem"
+                  height="150px"
+                  width="200px"
                 />
                 <div className="card-body">
-                  <h5 className="card-title">Happiness Program</h5>
+                  <h5 className="card-title">Anand Utsav with Gurudev</h5>
                   <p className="card-text">
-                    You can edit phot, date, time, location and more in this
+                    You can edit phot0, date, time, location and more in this
                     design
                   </p>
                   <NavLink to="/anandutsav" className="btn btn-primary">
