@@ -9,6 +9,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Followup1 from './Components/Posters/followup1.jsx'
 import Happiness3 from './Components/Posters/Happiness3.jsx'
 import Anandutsav from './Components/Posters/anandutsav.jsx'
+import { ContactUs } from './Components/Posters/login.jsx'
 
 
 
@@ -23,7 +24,7 @@ function App() {
       element: <><Happiness /></> 
     },
     {
-      path:"/",
+      path:"/landing",
       element: <Landing/>
     },
     {
@@ -42,6 +43,11 @@ element: <Happiness3 />
 {
   path: "/anandutsav",
 element: <Anandutsav />
+}
+,
+{
+  path: "/",
+element: <ContactUs />
 }
 
   ])

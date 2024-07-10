@@ -849,7 +849,9 @@ font-size: 14px;
 color: #878787;
 }
 
-.badge{
-  width: auto;
-}
+.ms{
+  border: 1px solid #053712;
+  margin-top: 20%;
 
+
+}
