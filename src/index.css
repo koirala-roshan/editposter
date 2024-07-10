@@ -392,8 +392,7 @@ margin-top: 20px;
 
   text-align: center;
 font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-color: #052957;
-
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 
 }
 .dd{
@@ -403,21 +402,14 @@ background-color: #052957;
 background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
 }
 
-.niceh2{
-  color: #ffffff;
-
-  text-align: center;
-font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
-
-
-}
 .dd1{
-  color: #14ff91;
+  color: #ffffff;
   font-family: 'Arial Narrow', Arial, sans-serif;
-  font-size: 20px;
-
+  font-size: 15px;
+background-color: #ff0000;
 }
+
+
 .cclp{
 
   align-items: center;
@@ -860,3 +852,4 @@ color: #878787;
 .badge{
   width: auto;
 }
+

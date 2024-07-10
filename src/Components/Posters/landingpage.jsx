@@ -10,8 +10,8 @@ const Landing = () => {
 
 
 
-<h1 className="niceh1"> <img src="./logo.avif" className="img-fluid"/> Hi I am Flier Editor <span className="dd">Powered by SSPT</span></h1>
-<p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
+<h1 className="niceh1"><span className="dd1">Beta</span>  Hi I am Flier Editor <span className="dd">Powered by SSPT</span> </h1>
+{/* <p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p> */}
       
       <Tabs 
         defaultActiveKey="anandutsav" 
@@ -47,7 +47,7 @@ const Landing = () => {
           </div>
         </Tab>
         <Tab eventKey="happiness" title="Happiness Program">
-        <p className="text-center">Coming soon...</p>
+        <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container-fluid">
             <div className="row mt-3 justify-content-center">
               <div className="card">
@@ -113,7 +113,7 @@ const Landing = () => {
           </div> */}
         </Tab>
         <Tab eventKey="sahaj" title="Sahaj Samadhi Meditation">
-        <p className="text-center">Coming soon...</p>
+        <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center">
               <div className="card col-md-3 mt-3">
@@ -139,7 +139,7 @@ const Landing = () => {
           </div> */}
         </Tab>
         <Tab eventKey="yoga" title="Sri Sri Yoga">
-        <p className="text-center">Coming soon...</p>
+        <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center">
               <div className="card col-md-3 mb-3 mt-3">
@@ -165,7 +165,7 @@ const Landing = () => {
           </div> */}
         </Tab>
         <Tab eventKey="followup" title="Follow Up">
-        <p className="text-center">Coming soon...</p>
+        <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
@@ -192,7 +192,7 @@ const Landing = () => {
         </Tab>
 
         <Tab eventKey="satsang" title="Satsang">
-          <p className="text-center">Coming soon...</p>
+          <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
@@ -220,7 +220,7 @@ const Landing = () => {
       </Tabs>
 
       {/* faq */} 
-      <h1 className="niceh2 container-fluid">FAQ Section</h1>
+
 <div className="container mt-4 mb-4"> 
   <div className="row">
 
@@ -297,7 +297,7 @@ const Landing = () => {
                             <i class="far fa-envelope-open"></i>
                             <div class="cta-text">
                                 <h4>Mail us</h4>
-                                <span>support@artofliving.store</span>
+                                <span className="mail">support@artofliving.store</span>
                             </div>
                         </div>
                     </div>
@@ -308,7 +308,7 @@ const Landing = () => {
                     <div class="col-xl-4 col-lg-4 mb-50">
                         <div class="footer-widget">
                             <div class="footer-logo">
-                              <h2 className="text-white">Sri Sri Publications Trust</h2>
+                              <h2 className="text-white">AOL Store</h2>
                             </div>
                             <div class="footer-text">
                                 <p>We promote peace through diverse humanitarian projects, including conflict resolution, disaster relief, sustainable rural development, empowerment of women, prisoner rehabilitation, education for all, and environmental sustainability.</p>
@@ -327,7 +327,7 @@ const Landing = () => {
                                 <h3>Useful Links</h3>
                             </div>
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="https://artofliving.store/">Home</a></li>
                                 <li><a href="#">about</a></li>
 
                             
