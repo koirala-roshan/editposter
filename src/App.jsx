@@ -8,6 +8,7 @@ import Landing from './Components/Posters/landingpage.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'                  
 import Followup1 from './Components/Posters/followup1.jsx'
 import Happiness3 from './Components/Posters/Happiness3.jsx'
+import Anandutsav from './Components/Posters/anandutsav.jsx'
 
 
 
@@ -35,6 +36,11 @@ element: <Followup1 />
 {
   path: "/editposter4",
 element: <Happiness3 />
+}
+,
+{
+  path: "/anandutsav",
+element: <Anandutsav />
 }
   ])
   return (

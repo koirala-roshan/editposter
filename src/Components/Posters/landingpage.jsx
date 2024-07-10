@@ -14,12 +14,41 @@ const Landing = () => {
 <p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p>
       
       <Tabs 
-        defaultActiveKey="happiness" 
+        defaultActiveKey="anandutsav" 
         id="uncontrolled-tab-example"
         className="mb-3 justify-content-center ntabs"
       >
-        <Tab eventKey="happiness" title="Happiness Program">
+                <Tab eventKey="anandutsav" title="Anand Utsav">
           <div className="container-fluid">
+            <div className="row mt-3 justify-content-center">
+              <div className="card">
+                <img
+                  src="./s1.jpg"
+                  class="card-img-top mt-3"
+                  alt="..."
+                  height="150"
+                  width="120rem"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Happiness Program</h5>
+                  <p className="card-text">
+                    You can edit phot, date, time, location and more in this
+                    design
+                  </p>
+                  <NavLink to="/anandutsav" className="btn btn-primary">
+                    Edit this template{" "}
+                  </NavLink>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+        </Tab>
+        <Tab eventKey="happiness" title="Happiness Program">
+        <p className="text-center">Coming soon...</p>
+          {/* <div className="container-fluid">
             <div className="row mt-3 justify-content-center">
               <div className="card">
                 <img
@@ -81,10 +110,11 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Tab>
         <Tab eventKey="sahaj" title="Sahaj Samadhi Meditation">
-          <div className="container">
+        <p className="text-center">Coming soon...</p>
+          {/* <div className="container">
             <div className="row mt-3 justify-content-center">
               <div className="card col-md-3 mt-3">
                 <img
@@ -106,10 +136,11 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Tab>
         <Tab eventKey="yoga" title="Sri Sri Yoga">
-          <div className="container">
+        <p className="text-center">Coming soon...</p>
+          {/* <div className="container">
             <div className="row mt-3 justify-content-center">
               <div className="card col-md-3 mb-3 mt-3">
                 <img
@@ -131,10 +162,11 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Tab>
         <Tab eventKey="followup" title="Follow Up">
-          <div className="container">
+        <p className="text-center">Coming soon...</p>
+          {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
                 <img
@@ -156,9 +188,84 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
+        </Tab>
+
+        <Tab eventKey="satsang" title="Satsang">
+          <p className="text-center">Coming soon...</p>
+          {/* <div className="container">
+            <div className="row mt-3 justify-content-center mb-3">
+              <div className="card col-md-3">
+                <img
+                  src="./followup1.jpg"
+                  class="card-img-top"
+                  alt="..."
+                                height="150"
+                  width="120rem"
+                />
+                <div className="card-body">
+                  <h5 className="card-title">Follow Up</h5>
+                  <p className="card-text">
+                    You can edit phot, date, time, location and more in this
+                    design
+                  </p>
+                  <NavLink to="/editposter3" className="btn btn-primary">
+                    Edit this template{" "}
+                  </NavLink>
+                </div>
+              </div>
+            </div>
+          </div> */}
         </Tab>
       </Tabs>
+
+      {/* faq */} 
+      <h1 className="niceh2 container-fluid">FAQ Section</h1>
+<div className="container mt-4 mb-4"> 
+  <div className="row">
+
+
+      <div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        When this will be fully functional?
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        Who is operating this?
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        What more we can do here?
+
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
 
 
       {/* Footer */}
