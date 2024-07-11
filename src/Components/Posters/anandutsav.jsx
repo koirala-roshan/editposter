@@ -56,7 +56,7 @@ const handleInputChange = (e) => {
         [name]: value
     });
 };
-
+const form = useRef();
   const sendEmail = () => {
   
 
