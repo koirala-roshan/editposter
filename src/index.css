@@ -502,6 +502,9 @@ h4{
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
 }
 #linkanand {
   text-align: center;
@@ -855,3 +858,4 @@ color: #878787;
 
 
 }
+

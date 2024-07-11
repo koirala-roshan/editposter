@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import Anandutsav from './anandutsav';
 
 export const ContactUs = () => {
   const form = useRef();
@@ -14,7 +15,7 @@ export const ContactUs = () => {
       .then(
         () => {
           console.log('SUCCESS!');
-          window.location.assign("/landing")
+          window.location.replace('/landing')
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -41,7 +42,7 @@ export const ContactUs = () => {
       <label>Address</label>
       <input type='text' name="user_addresss" required />
       <br/>
-      <input type="submit" className='btn btn-primary' value="Submit" />
+      <input type="submit"  className='btn btn-primary' value="Submit" />
     </form>
     </div>
     </div>

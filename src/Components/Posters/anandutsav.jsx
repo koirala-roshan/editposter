@@ -1,14 +1,22 @@
-import React, { useState,useRef } from 'react';
+import React, { useState,useRef, useEffect } from 'react';
 import html2canvas from 'html2canvas';
-
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+import emailjs from '@emailjs/browser';
 
 const Anandutsav = () => {
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const [Teachersname, setTeachersName] = useState('Rohit Dharma');
   const [link, setLink] = useState('Registration Link: aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('91 9036425223');
   const [venue, setVenue] = useState('At Art of Living International Center');
+  
   const [imagePreview, setImagePreview] = useState("./hp.jpg");
 
   const handleImageChange = (event) => {
@@ -22,11 +30,37 @@ const Anandutsav = () => {
     }
   };
 
- 
 
+const [formData, setFormData] = useState({
+    user_name: '',
+    user_email: '',
+    user_phone: '',
+    user_code: '',
+    user_address: ''
+});
+
+const form = useRef();
+  const sendEmail = (e) => {
+  
+    e.preventDefault();
+    emailjs
+      .sendForm('service_tmqtsbd', 'template_m3dzzif', form.current, {
+        publicKey: 'rdStUfWtC91vQZenl',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
 
 
   const downloadPoster = async () => {
+
     const poster = document.getElementById('posteranand');
     if (poster) {
       try { 
@@ -35,6 +69,7 @@ const Anandutsav = () => {
         link.href = canvas.toDataURL('image/jpg');
         link.download = 'design.jpg';
         link.click();
+
       } catch (error) {
         console.error('Error generating canvas: ', error);
       }
@@ -42,6 +77,16 @@ const Anandutsav = () => {
       console.error('Poster element not found');
     }
   };
+
+  const handleButtonClick = async () => {
+    await downloadPoster();
+    await sendEmail();
+
+
+    
+};
+
+
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
     imagePreviewContainer: { width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', marginTop: '227px', marginLeft: '242px', border: '2px solid #1089a0', position: 'relative',},
@@ -143,13 +188,53 @@ const Anandutsav = () => {
         
 
         </form>
-        <button  id="button" onClick={downloadPoster}>Download Poster</button>
-    </div>
+
+        {/* <button  id="button">Download Poster</button> */}
+        <Button variant="primary" className='m-2' onClick={handleShow}>
+        Click here to download poster
+      </Button>
+
+      <Modal
+        show={show}
+        onHide={handleClose}
+        backdrop="static"
+        keyboard={false}
+      >
+        <Modal.Header closeButton>
+          <Modal.Title>Please fill these details to download poster</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+
+
+        <form ref={form} >
+      <label>Name</label>
+      <input type="text" name="user_name" required   />
+      <label>Email</label>
+      <input type="email" name="user_email"  />
+      <label>Phone</label>
+      <input type='text' name="user_phone" required  />
+      <label>Teachers Code (Optional) </label>
+      <input type='text' name="user_code" placeholder='type NA if its not available' required />
+      <label>Address</label>
+      <input type='text' name="user_address" required />
+      <br/>
+      <button onClick={handleButtonClick} className='btn btn-primary' type='submit'  value="Download" > Download </button>
+
+    </form>
+        </Modal.Body>
   
-     
+      </Modal>
 
 
 
+
+
+
+
+
+
+        
+    </div>
       </div>
 
 

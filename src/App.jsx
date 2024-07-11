@@ -24,7 +24,7 @@ function App() {
       element: <><Happiness /></> 
     },
     {
-      path:"/landing",
+      path:"/",
       element: <Landing/>
     },
     {
@@ -46,7 +46,7 @@ element: <Anandutsav />
 }
 ,
 {
-  path: "/",
+  path: "/contact",
 element: <ContactUs />
 }
 
