@@ -39,10 +39,27 @@ const [formData, setFormData] = useState({
     user_address: ''
 });
 
-const form = useRef();
-  const sendEmail = (e) => {
+// State to manage button disabled state
+const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+// Effect to check if all fields are filled
+useEffect(() => {
+    const {user_name, user_email, user_phone,  user_code,user_address } = formData;
+    setIsButtonDisabled(!(user_name && user_email && user_phone && user_code && user_address));
+}, [formData]);
+
+// Handle input change
+const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    });
+};
+
+  const sendEmail = () => {
   
-    e.preventDefault();
+
     emailjs
       .sendForm('service_tmqtsbd', 'template_m3dzzif', form.current, {
         publicKey: 'rdStUfWtC91vQZenl',
@@ -206,19 +223,19 @@ const form = useRef();
         <Modal.Body>
 
 
-        <form ref={form} >
+        <form ref={form}>
       <label>Name</label>
-      <input type="text" name="user_name" required   />
+      <input type="text" name="user_name" required value={formData.user_name} onChange={handleInputChange}  />
       <label>Email</label>
-      <input type="email" name="user_email"  />
+      <input type="email" name="user_email" required value={formData.user_email} onChange={handleInputChange} />
       <label>Phone</label>
-      <input type='text' name="user_phone" required  />
+      <input type='text' name="user_phone" required value={formData.user_phone} onChange={handleInputChange}  />
       <label>Teachers Code (Optional) </label>
-      <input type='text' name="user_code" placeholder='type NA if its not available' required />
+      <input type='text' name="user_code" placeholder='type NA if its not available' required value={formData.user_code} onChange={handleInputChange}/>
       <label>Address</label>
-      <input type='text' name="user_address" required />
+      <input type='text' name="user_address" required value={formData.user_address} onChange={handleInputChange} />
       <br/>
-      <button onClick={handleButtonClick} className='btn btn-primary' type='submit'  value="Download" > Download </button>
+      <button onClick={handleButtonClick} className='btn btn-primary' type='submit' disabled={isButtonDisabled} > Download </button>
 
     </form>
         </Modal.Body>
