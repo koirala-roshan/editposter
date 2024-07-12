@@ -798,36 +798,7 @@ color: #ff5e14;
 color: #878787;
 text-transform: capitalize;
 }
-.subscribe-form {
-position: relative;
-overflow: hidden;
-}
-.subscribe-form input {
-width: 100%;
-padding: 14px 28px;
-background: #2E2E2E;
-border: 1px solid #2E2E2E;
-color: #fff;
-}
-.subscribe-form button {
-  position: absolute;
-  right: 0;
-  background: #ff5e14;
-  margin-top: 5px;
-  width: 50px;
 
-  border: 1px solid #ff5e14;
-  top: 0;
-}
-.ntabs{
-  
-}
-
-.subscribe-form button i {
-color: #fff;
-font-size: 22px;
-transform: rotate(-6deg);
-}
 .copyright-area{
   background-image: linear-gradient(to right top, #053712, #00382c, #003646, #003256, #052957);
 padding: 25px 0;

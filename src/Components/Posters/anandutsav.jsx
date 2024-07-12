@@ -68,6 +68,7 @@ const form = useRef();
       .then(
         () => {
           console.log('SUCCESS!');
+          window.location.replace("https://artofliving.store/");
 
         },
         (error) => {
@@ -221,7 +222,7 @@ const form = useRef();
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Please fill these details to download poster</Modal.Title>
+          <Modal.Title>Fill these details to download poster</Modal.Title>
 
         </Modal.Header>
         <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p>
