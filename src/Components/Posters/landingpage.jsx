@@ -1,18 +1,80 @@
 import React from "react";
-import Navbar from "./navbar";
+
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import Carousel from 'react-bootstrap/Carousel';
+
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
 const Landing = () => {
   return (
     <>
+    <div className="container">
+    <Navbar collapseOnSelect expand="lg" className="bg-body-white">
 
+        <Navbar.Brand>  <img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/></Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="#features">
+            <h1 className="niceh1"> Flier Editor  <span className="dd1">Beta</span> <span className="dd">Powered by SSPT</span></h1>
 
+</Nav.Link>
+          </Nav>
 
-
-<h1 className="niceh1"><span className="dd1">Beta</span>  Hi I am Flier Editor <span className="dd">Powered by SSPT</span> </h1>
-{/* <p className="cclp container text-center mb-4">Specially designed to help volunteers/teachers who is organizing courses events and many more in the field. It contains already made fliers where you can just put your details, download it and share.</p> */}
+        </Navbar.Collapse>
       
+    </Navbar>
+</div>
+
+<div className="container">
+<Carousel data-bs-theme="dark">
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider1.webp"
+          alt="First slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider2.webp"
+          alt="Second slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider1.webp"
+          alt="Third slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
+</div>
+
+<div className="container">
+
       <Tabs 
         defaultActiveKey="anandutsav" 
         id="uncontrolled-tab-example"
@@ -218,6 +280,7 @@ const Landing = () => {
           </div> */}
         </Tab>
       </Tabs>
+      </div>
 
       {/* faq */} 
 
@@ -267,6 +330,10 @@ const Landing = () => {
 </div>
 </div>
 
+<div>
+  
+</div>
+
 
       {/* Footer */}
 
@@ -278,7 +345,7 @@ const Landing = () => {
                         <div className="single-cta">
                             <i className="fas fa-map-marker-alt"></i>
                             <div className="cta-text">
-                                <h4>Find us</h4>
+                                <h4>Store Location</h4>
                                 <span>21st KM, Udayapura Post, Kanakapura Rd, Bengaluru, Karnataka 560082</span>
                             </div>
                         </div>
@@ -287,7 +354,7 @@ const Landing = () => {
                         <div className="single-cta">
                             <i className="fas fa-phone"></i>
                             <div className="cta-text">
-                                <h4>Call us</h4>
+                                <h4>Call/Text us</h4>
                                 <span>+91 7411057770</span>
                             </div>
                         </div>
@@ -308,13 +375,13 @@ const Landing = () => {
                     <div className="col-xl-4 col-lg-4 mb-50">
                         <div className="footer-widget">
                             <div className="footer-logo">
-                            <img src="./logo.avif" className="img-fluid"/>
+                            <img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/>
                             </div>
                             <div className="footer-text">
                                 <p>We promote peace through diverse humanitarian projects, including conflict resolution, disaster relief, sustainable rural development, empowerment of women, prisoner rehabilitation, education for all, and environmental sustainability.</p>
                             </div>
                             <div className="footer-social-icon">
-                                <span>Follow us</span>
+                               Follow us:<br/>   
                                 <a href="#"><i className="bi bi-facebook"></i></a>
                                 <a href="#"><i className="bi bi-twitter"></i></a>
                                 <a href="#"><i className=" bi bi-instagram"></i></a>
@@ -324,17 +391,18 @@ const Landing = () => {
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                         <div className="footer-widget">
                             <div className="footer-widget-heading">
-                                <h3>Useful Links</h3>
+                                <h3>Help</h3>
                             </div>
                             <ul>
-                                <li><a href="https://artofliving.store/">Home</a></li>
-                                <li><a href="#">about</a></li>
+                                <li><a href="https://artofliving.store/pages/payment" target="_blank">Payment</a></li>
+                                <li><a href="#">Shipping</a></li>
 
                             
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
-                                <li><a href="#">Our Services</a></li>
-                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">FAQ</a></li>
+                                <li><a href="#">Terms & Condition</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Cancellation & Refund Policy</a></li>
+                                <li><a href="#">Terms & Service</a></li>
                             </ul>
                         </div>
                     </div>
@@ -358,7 +426,7 @@ const Landing = () => {
                 <div className="row">
                     <div className="col-xl-12 col-lg-12 text-center text-lg-left">
                         <div className="copyright-text">
-                            <p>Copyright &copy; 2018, All Right Reserved <a href="https://artofliving.store/">Sri Sri Publications Trust</a></p>
+                            <p>Copyright &copy; 2024, All Right Reserved <a href="https://artofliving.store/">Sri Sri Publications Trust</a></p>
                         </div>
                     </div>
 

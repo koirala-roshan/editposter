@@ -3,6 +3,7 @@ body{
   margin: 0px;
   overflow-x: hidden;
   overflow-y: scroll;
+
 }
 .container{
 float: center;
@@ -388,11 +389,13 @@ margin-top: 20px;
 
 
 .niceh1{
-  color: #ffffff;
+  color:#3d3d3d;;
 
   text-align: center;
 font-family:  'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+background-color: rgb(255, 255, 255);
+font-size: 26px;
+/* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
 
 }
 .dd{
@@ -701,8 +704,11 @@ ul {
   margin: 0px;
   padding: 0px;
 }
+
+
+
 .footer-section {
-  background-image: linear-gradient(to right top, #053712, #00382c, #003646, #003256, #052957);
+ background-color: rgb(240, 240, 240);
 position: relative;
 float: none;
 }
@@ -720,7 +726,7 @@ padding-left: 15px;
 display: inline-block;
 }
 .cta-text h4 {
-color: #fff;
+color: #000000;
 font-size: 20px;
 font-weight: 600;
 margin-bottom: 2px;
@@ -733,14 +739,7 @@ font-size: 15px;
 position: relative;
 z-index: 2;
 }
-.footer-pattern img {
-position: absolute;
-top: 0;
-left: 0;
-height: 330px;
-background-size: cover;
-background-position: 100% 100%;
-}
+
 
 .footer-text p {
 margin-bottom: 14px;
@@ -749,7 +748,7 @@ font-size: 14px;
 line-height: 28px;
 }
 .footer-social-icon span {
-color: #fff;
+color: #5e3a3a;
 display: block;
 font-size: 20px;
 font-weight: 700;
@@ -757,7 +756,7 @@ font-family: 'Poppins', sans-serif;
 margin-bottom: 20px;
 }
 .footer-social-icon a {
-color: #fff;
+color: #614343;
 font-size: 16px;
 margin-right: 15px;
 }
@@ -770,7 +769,7 @@ border-radius: 50%;
 }
 
 .footer-widget-heading h3 {
-color: #fff;
+color: #000000;
 font-size: 20px;
 font-weight: 600;
 margin-bottom: 40px;
@@ -783,7 +782,7 @@ left: 0;
 bottom: -15px;
 height: 2px;
 width: 50px;
-background: #ff5e14;
+background: transparent;
 }
 .footer-widget ul li {
 display: inline-block;
@@ -800,13 +799,14 @@ text-transform: capitalize;
 }
 
 .copyright-area{
-  background-image: linear-gradient(to right top, #053712, #00382c, #003646, #003256, #052957);
+ background-color: rgb(240, 240, 240);;
 padding: 25px 0;
 }
 .copyright-text p {
 margin: 0;
 font-size: 14px;
 color: #878787;
+
 }
 .copyright-text p a{
 color: #ff5e14;
@@ -823,10 +823,8 @@ font-size: 14px;
 color: #878787;
 }
 
-.ms{
-  border: 1px solid #053712;
-  margin-top: 20%;
-
-
+.ntabs
+{
+  background-color: #f0f0f0;
+  
 }
-
