@@ -7,6 +7,7 @@ import emailjs from '@emailjs/browser';
 const Anandutsav = () => {
   const [show, setShow] = useState(false);
 
+ 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
@@ -16,9 +17,9 @@ const Anandutsav = () => {
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('91 9036425223');
   const [venue, setVenue] = useState('At Art of Living International Center');
-  
-  const [imagePreview, setImagePreview] = useState("./hp.jpg");
 
+  //image handler
+  const [imagePreview, setImagePreview] = useState("./hp.jpg");
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -56,10 +57,10 @@ const handleInputChange = (e) => {
         [name]: value
     });
 };
+
+//emailjs code
 const form = useRef();
   const sendEmail = () => {
-  
-
     emailjs
       .sendForm('service_tmqtsbd', 'template_m3dzzif', form.current, {
         publicKey: 'rdStUfWtC91vQZenl',
@@ -75,6 +76,7 @@ const form = useRef();
       );
   };
 
+//downloadpostercode
 
   const downloadPoster = async () => {
 
@@ -95,11 +97,12 @@ const form = useRef();
     }
   };
 
-  const handleButtonClick = async () => {
+
+  //handle click
+  const handleButtonClick = async (event) => {
     await downloadPoster();
     await sendEmail();
-
-
+    event.preventDefault();
     
 };
 
@@ -223,7 +226,7 @@ const form = useRef();
         <Modal.Body>
 
 
-        <form ref={form}>
+        <form method="" ref={form}>
       <label>Name</label>
       <input type="text" name="user_name" required value={formData.user_name} onChange={handleInputChange}  />
       <label>Email</label>
@@ -235,9 +238,10 @@ const form = useRef();
       <label>Address</label>
       <input type='text' name="user_address" required value={formData.user_address} onChange={handleInputChange} />
       <br/>
-      <button onClick={handleButtonClick} className='btn btn-primary' type='submit' disabled={isButtonDisabled} > Download </button>
+      
 
     </form>
+    <input  onClick={handleButtonClick} type='submit' className='btn btn-primary' disabled={isButtonDisabled} value="Download" />
         </Modal.Body>
   
       </Modal>
