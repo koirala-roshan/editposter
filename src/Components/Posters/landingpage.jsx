@@ -340,36 +340,7 @@ const Landing = () => {
       <footer className="footer-section">
         <div className="container">
             <div className="footer-cta pt-5 pb-5">
-                <div className="row">
-                    <div className="col-xl-4 col-md-4 mb-30">
-                        <div className="single-cta">
-                            <i className="fas fa-map-marker-alt"></i>
-                            <div className="cta-text">
-                                <h4>Store Location</h4>
-                                <span>21st KM, Udayapura Post, Kanakapura Rd, Bengaluru, Karnataka 560082</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-4 mb-30">
-                        <div className="single-cta">
-                            <i className="fas fa-phone"></i>
-                            <div className="cta-text">
-                                <h4>Call/Text us</h4>
-                                <span>+91 7411057770</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xl-4 col-md-4 mb-30">
-                        <div className="single-cta">
-                            <i className="far fa-envelope-open"></i>
-                            <div className="cta-text">
-                                <h4>Mail us</h4>
-                                <span className="mail">support@artofliving.store</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
             <div className="footer-content pt-5 pb-5">
                 <div className="row">
                     <div className="col-xl-4 col-lg-4 mb-50">
@@ -407,19 +378,58 @@ const Landing = () => {
                         </div>
                     </div>
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
-                        {/* <div className="footer-widget">
+                        <div className="footer-widget">
                             <div className="footer-widget-heading">
-                                <h3>Subscribe</h3>
+                                <h3>About Store</h3>
                             </div>
                             <div className="footer-text mb-25">
-                                <img src="./logo.avif" className="img-fluid"/>
+                            <i className="bi-map"> </i><span>Bengaluru, Karnataka 560082</span>
+                            </div>
+                            <br/>
+                            <div className="footer-text mb-25">
+                            <i className="bi-phone"> </i><span>+91 7411057770</span>
+                            </div>
+                            <br/>
+                            <div className="footer-text mb-25">
+                            <i className="bi-envelope"> </i><span>support@artofliving.store</span>
                             </div>
                             
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        {/* <div className="row">
+
+                    <div className="col-xl-4 col-md-4 mb-3">
+                        <div className="single-cta">
+                            <i className="fas fa-map-marker-alt"></i>
+                            <div className="cta-text">
+                                <h4>Store Location</h4>
+                                <span>21st KM, Udayapura Post, Kanakapura Rd, Bengaluru, Karnataka 560082</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 col-md-4 mb-30">
+                        <div className="single-cta">
+                            <i className="fas fa-phone"></i>
+                            <div className="cta-text">
+                                <h4>Call/Text us</h4>
+                                <span>+91 7411057770</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-xl-4 col-md-4 mb-30">
+                        <div className="single-cta">
+                            <i className="far fa-envelope-open"></i>
+                            <div className="cta-text">
+                                <h4>Mail us</h4>
+                                <span className="mail">support@artofliving.store</span>
+                            </div>
+                        </div>
+                    </div>
+                </div> */}
+          
 
         <div className="copyright-area">
             <div className="container">
@@ -432,6 +442,7 @@ const Landing = () => {
 
                 </div>
             </div>
+        </div>
         </div>
     </footer>
     </>
