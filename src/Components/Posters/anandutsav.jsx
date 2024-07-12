@@ -222,21 +222,23 @@ const form = useRef();
       >
         <Modal.Header closeButton>
           <Modal.Title>Please fill these details to download poster</Modal.Title>
+
         </Modal.Header>
+        <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p>
         <Modal.Body>
 
 
-        <form method="" ref={form}>
+        <form method="post" ref={form}>
       <label>Name</label>
-      <input type="text" name="user_name" required value={formData.user_name} onChange={handleInputChange}  />
+      <input type="text" placeholder="Please enter your fullname" name="user_name" required value={formData.user_name} onChange={handleInputChange}  />
       <label>Email</label>
-      <input type="email" name="user_email" required value={formData.user_email} onChange={handleInputChange} />
+      <input type="email" placeholder="Please enter your correct email address" name="user_email" required value={formData.user_email} onChange={handleInputChange} />
       <label>Phone</label>
-      <input type='text' name="user_phone" required value={formData.user_phone} onChange={handleInputChange}  />
+      <input type='number' placeholder="Please enter your contact number" name="user_phone" required value={formData.user_phone} onChange={handleInputChange}  />
       <label>Teachers Code (Optional) </label>
       <input type='text' name="user_code" placeholder='type NA if its not available' required value={formData.user_code} onChange={handleInputChange}/>
       <label>Address</label>
-      <input type='text' name="user_address" required value={formData.user_address} onChange={handleInputChange} />
+      <input type='text'placeholder="Please enter your address" name="user_address" required value={formData.user_address} onChange={handleInputChange} />
       <br/>
       
 
