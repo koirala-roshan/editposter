@@ -4,8 +4,9 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { NavLink } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
+import Card from 'react-bootstrap/Card';
+import Button from 'react-bootstrap/Button';
 
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 
@@ -282,7 +283,48 @@ const Landing = () => {
       </Tabs>
       </div>
 
+
+
+<section className="productsection mt-5 mb-5">
+  <br/>
+  <h4 className="text-center">Our Best Selling Product</h4>
+<div className="container-fluid">
+  <div className="row justify-content-center">
+
+      <Card style={{ width: '13rem', height:'13rem' }}>
+    <Card.Img variant="top" src="intimate.webp" className="mt-2"  />
+    </Card>
+  
+
+    <Card style={{ width: '13rem', height:'13rem' }}>
+  <Card.Img variant="top" src="bhagvad.webp" className="mt-2" /> 
+  
+    </Card>
+  
+  
+    <Card style={{ width: '13rem', height:'13rem' }}>
+    <Card.Img variant="top" src="saregama.webp" className="mt-2"/>
+   
+    </Card>
+ 
+    <Card style={{ width: '13rem', height:'13rem' }}>
+      <Card.Img variant="top" src="coin1.webp" className="mt-2" />
+
+    </Card>
+
+
+    <Card style={{ width: '13rem', height: '13rem'}}>
+      <Card.Img variant="top" src="coin2.webp" className="mt-2"/>
+    </Card>
+  
+
+    </div>
+    </div>
+    </section>
+
       {/* faq */} 
+
+    
 
 <div className="container mt-4 mb-4"> 
   <div className="row">
