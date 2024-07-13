@@ -13,7 +13,7 @@ import Nav from 'react-bootstrap/Nav';
 const Landing = () => {
   return (
     <>
-    <div className="container">
+    {/* <div className="container">
     <Navbar collapseOnSelect expand="lg" className="bg-body-white">
 
         <Navbar.Brand>  <img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/></Navbar.Brand>
@@ -21,7 +21,7 @@ const Landing = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
             <Nav.Link href="#features">
-            <h1 className="niceh1"> Flier Editor  <span className="dd1">Beta</span> <span className="dd">Powered by SSPT</span></h1>
+         
 
 </Nav.Link>
           </Nav>
@@ -29,9 +29,28 @@ const Landing = () => {
         </Navbar.Collapse>
       
     </Navbar>
-</div>
+</div> */}
 
-<div className="container">
+<nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id=""/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#"><i className="bi-house"></i> Home</a></li>
+                <li><a href="#"><i className="bi-info-circle"></i> About</a></li>
+                <li><a href="#"><i className="bi-cart3"></i> Our Products</a></li>
+                <li><a href="#"><i className="bi-quote"> </i>Testimonial</a></li>
+                <li><a href="#"><i className="bi-whatsapp"> </i>Contact</a></li>
+            </ul>
+            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/>    <span className="dd"> Flier- Editor [Powered by SSPT]</span></h1>
+        </div>
+    </nav>
+
+<div className="container mt-4">
 <Carousel data-bs-theme="dark">
       <Carousel.Item>
         <img
@@ -94,10 +113,10 @@ const Landing = () => {
                 />
                 <div className="card-body">
                   <h5 className="card-title">Anand Utsav with Gurudev</h5>
-                  <p className="card-text">
+                  {/* <p className="card-text">
                     You can edit phot0, date, time, location and more in this
                     design
-                  </p>
+                  </p> */}
                   <NavLink to="/anandutsav" className="btn btn-primary">
                     Edit this template{" "}
                   </NavLink>
@@ -287,34 +306,34 @@ const Landing = () => {
 
 <section className="productsection mt-5 mb-5">
   <br/>
-  <h4 className="text-center">Our Best Selling Product</h4>
+  <h4 className="text-center">&lt;&lt; Explore Our Best Selling Products &gt;&gt; </h4>
 <div className="container-fluid">
   <div className="row justify-content-center">
 
       <Card style={{ width: '13rem', height:'13rem' }}>
-    <Card.Img variant="top" src="intimate.webp" className="mt-2"  />
+      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker" target="_blank">  <Card.Img variant="top" src="intimate.webp" className="mt-2 img-fluid"  /> </a>
     </Card>
   
 
     <Card style={{ width: '13rem', height:'13rem' }}>
-  <Card.Img variant="top" src="bhagvad.webp" className="mt-2" /> 
+    <a href="https://artofliving.store/products/talking-bhagavad-gita" target="_blank"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
   
     </Card>
   
   
     <Card style={{ width: '13rem', height:'13rem' }}>
-    <Card.Img variant="top" src="saregama.webp" className="mt-2"/>
+    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel" target="_blank"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
    
     </Card>
  
     <Card style={{ width: '13rem', height:'13rem' }}>
-      <Card.Img variant="top" src="coin1.webp" className="mt-2" />
+    <a href="https://artofliving.store/products/silver-coin-pre-order-now" target="_blank"> <Card.Img variant="top" src="coin1.webp" className="mt-2 img-fluid" /></a>
 
     </Card>
 
 
     <Card style={{ width: '13rem', height: '13rem'}}>
-      <Card.Img variant="top" src="coin2.webp" className="mt-2"/>
+    <a href="https://artofliving.store/products/gold-coin-pre-order-now" target="_blank"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
     </Card>
   
 
@@ -339,7 +358,7 @@ const Landing = () => {
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        <strong>This is on the developing process.</strong> It will be fully functional soon. Omce it is completed we will notify via email or our community. <code>Be in touch</code>
       </div>
     </div>
   </div>
