@@ -143,11 +143,11 @@ const form = useRef();
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#"> Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#"> Our Products</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/"> Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/#"> Our Products</a></li>
+                <li><a href="/">Testimonial</a></li>
+                <li><a href="/">Contact</a></li>
             </ul>
             <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}

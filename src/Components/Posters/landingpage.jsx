@@ -40,8 +40,8 @@ const Landing = () => {
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#"> Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="#anandutsav"> Home</a></li>
+                <li><a href="#hp">About</a></li>
                 <li><a href="#"> Our Products</a></li>
                 <li><a href="#">Testimonial</a></li>
                 <li><a href="#">Contact</a></li>
@@ -51,18 +51,20 @@ const Landing = () => {
         </div>
     </nav>
 
-<div className="container mt-4">
-
+<div>
+<img src="./postermaking.png" className="img-fluid" />
 </div>
 
 <div className="container">
+
+
 
       <Tabs 
         defaultActiveKey="anandutsav" 
         id="uncontrolled-tab-example"
         className="mb-3 justify-content-center ntabs"
       >
-                <Tab eventKey="anandutsav" title="Anand Utsav">
+                <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
           <div className="container-fluid">
             <div className="row mt-5 justify-content-center">
             <div className="justify-content-center">
@@ -82,7 +84,7 @@ const Landing = () => {
             </div>
           </div>
         </Tab>
-        <Tab eventKey="happiness" title="Happiness Program">
+        <Tab eventKey="happiness" id="hp" title="Happiness Program">
         <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container-fluid">
             <div className="row mt-3 justify-content-center">
@@ -299,33 +301,33 @@ const Landing = () => {
 
 <section className="productsection mb-5">
   <br/>
-  <h4 className="text-center">&lt;&lt; Explore Our Best Selling Products &gt;&gt; </h4>
+  <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4>
 <div className="container-fluid">
   <div className="row justify-content-center">
 
-      <Card style={{ width: '13rem', height:'13rem' }}>
-      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker" target="_blank">  <Card.Img variant="top" src="intimate.webp" className="mt-2 img-fluid"  /> </a>
+      <Card style={{ width: '15rem', height:'auto', backgroundColor:'transparent',border:'none' }}>
+      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker" target="_blank">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
     </Card>
   
 
-    <Card style={{ width: '13rem', height:'13rem' }}>
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
     <a href="https://artofliving.store/products/talking-bhagavad-gita" target="_blank"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
   
     </Card>
   
   
-    <Card style={{ width: '13rem', height:'13rem' }}>
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
     <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel" target="_blank"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
    
     </Card>
  
-    <Card style={{ width: '13rem', height:'13rem' }}>
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
     <a href="https://artofliving.store/products/silver-coin-pre-order-now" target="_blank"> <Card.Img variant="top" src="coin1.webp" className="mt-2 img-fluid" /></a>
 
     </Card>
 
 
-    <Card style={{ width: '13rem', height: '13rem'}}>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
     <a href="https://artofliving.store/products/gold-coin-pre-order-now" target="_blank"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
     </Card>
   
@@ -426,7 +428,7 @@ const Landing = () => {
                                 <li><a href="#">FAQ</a></li>
                                 <li><a href="#">Terms & Condition</a></li>
                                 <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Cancellation & Refund Policy</a></li>
+                                <li><a href="#">Refund Policy</a></li>
                                 <li><a href="#">Terms & Service</a></li>
                             </ul>
                         </div>
@@ -439,11 +441,11 @@ const Landing = () => {
                             <div className="footer-text mb-25">
                             <i className="bi-map"> </i><span>Bengaluru, Karnataka 560082</span>
                             </div>
-                            <br/>
+                            
                             <div className="footer-text mb-25">
                             <i className="bi-phone"> </i><span>+91 7411057770</span>
                             </div>
-                            <br/>
+                            
                             <div className="footer-text mb-25">
                             <i className="bi-envelope"> </i><span>support@artofliving.store</span>
                             </div>

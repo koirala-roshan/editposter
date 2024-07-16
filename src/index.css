@@ -811,6 +811,9 @@ font-size: 14px;
 color: #878787;
 
 }
+.footer-text{
+  color: #878787;
+}
 .copyright-text p a{
 color: #ff5e14;
 }
@@ -847,11 +850,11 @@ color: #878787;
 
 }
 .productsection img{
-  transform: scale(1.2);
+  /* transform: scale(1.2); */
 
 }
 .productsection img:hover{
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition-duration: 2s;
 }
 
