@@ -258,7 +258,7 @@ const Landing = () => {
       </Tabs>
       </div>
 
-      <Carousel data-bs-theme="dark" className="mt-5">
+      <Carousel indicators={false} controls={false} className="mt-5">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -301,7 +301,7 @@ const Landing = () => {
 
 <section className="productsection mb-5">
   <br/>
-  <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4>
+<h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4>
 <div className="container-fluid">
   <div className="row justify-content-center">
 

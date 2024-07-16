@@ -134,7 +134,7 @@ const form = useRef();
   return (
   
       <>
-<nav class="navbar fixedtop">
+{/* <nav class="navbar fixedtop">
         <div class="navbar-container container">
             <input type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
@@ -149,11 +149,11 @@ const form = useRef();
                 <li><a href="/">Testimonial</a></li>
                 <li><a href="/">Contact</a></li>
             </ul>
-            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
+            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1> */}
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
-        </div>
+        {/* </div>
     </nav>
-    
+     */}
     <div className='container'>
     
       <div id="posteranand" className='firstdiv' style={{ width: '700px', height: '937px', border: '1px solid #000', padding: '20px' }}>

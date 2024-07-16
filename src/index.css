@@ -834,6 +834,11 @@ color: #878787;
   background-color: #f0f0f0;
   
 }
+.right.carousel-control, .left.carousel-control {
+  opacity: 0;
+  filter:alpha(opacity=0); /* IE support */
+}
+
 
 
 .productsection
