@@ -46,7 +46,8 @@ const Landing = () => {
                 <li><a href="#"><i className="bi-quote"> </i>Testimonial</a></li>
                 <li><a href="#"><i className="bi-whatsapp"> </i>Contact</a></li>
             </ul>
-            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/>    <span className="dd"> Flier- Editor [Powered by SSPT]</span></h1>
+            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
+             {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
         </div>
     </nav>
 

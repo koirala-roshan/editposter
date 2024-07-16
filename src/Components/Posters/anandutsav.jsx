@@ -83,13 +83,17 @@ const form = useRef();
   const downloadPoster = async () => {
 
     const poster = document.getElementById('posteranand');
-    if (poster) {
+    
+    if (poster,  { scale: 2 }) {
       try { 
+  
+ 
         const canvas = await html2canvas(poster);
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpg');
         link.download = 'design.jpg';
         link.click();
+       
 
       } catch (error) {
         console.error('Error generating canvas: ', error);
@@ -99,6 +103,15 @@ const form = useRef();
     }
   };
 
+  // const captureFunction = () => {
+  //   html2canvas(document.querySelector(".firstdiv"), { scale: 5 }).then(
+  //     (canvas) => {
+  //       document.body.appendChild(canvas);
+  //       link.download = 'design.jpg';
+  //       link.click();
+  //     }
+  //   );
+  // };
 
   //handle click
   const handleButtonClick = async (event) => {
@@ -124,7 +137,7 @@ const form = useRef();
 
     <div className='container'>
     
-      <div id="posteranand" className='firstdiv' style={{ width: '500px', height: '625px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posteranand" className='firstdiv' style={{ width: '700px', height: '937px', border: '1px solid #000', padding: '20px' }}>
 
         <h5 id='teachersnameanand'>{Teachersname}</h5>
         <h5 id='linkanand'>{link}</h5>
