@@ -104,26 +104,18 @@ const Landing = () => {
                 <Tab eventKey="anandutsav" title="Anand Utsav">
           <div className="container-fluid">
             <div className="row mt-3 justify-content-center">
-              <div className="card">
-                <img
-                  src="./frontcover.jpg"
-                  className="card-img-top mt-3"
+            <div className="justify-content-center">
+            <NavLink to="/anandutsav"> <img
+                  src="./design.png"
+
                   alt="..."
-                  height="150px"
+                  height="250px"
                   width="200px"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Anand Utsav with Gurudev</h5>
-                  {/* <p className="card-text">
-                    You can edit phot0, date, time, location and more in this
-                    design
-                  </p> */}
-                  <NavLink to="/anandutsav" className="btn btn-primary">
-                    Edit this template{" "}
-                  </NavLink>
-                </div>
+                </NavLink>
+        
               </div>
-
+             
 
 
             </div>

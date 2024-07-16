@@ -124,7 +124,7 @@ const form = useRef();
 
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '90px', height: '90px', borderRadius: '50%', overflow: 'hidden', marginTop: '227px', marginLeft: '242px', border: '2px solid #1089a0', position: 'relative',},
+    imagePreviewContainer: { width: '135px', height: '135px', borderRadius: '50%', overflow: 'hidden', marginTop: '360px', marginLeft: '410px', border: '2px solid #1089a0', position: 'relative',},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -133,8 +133,27 @@ const form = useRef();
 
   return (
   
-      
-
+      <>
+<nav class="navbar">
+        <div class="navbar-container container">
+            <input type="checkbox" name="" id=""/>
+            <div class="hamburger-lines">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </div>
+            <ul class="menu-items">
+                <li><a href="#"><i className="bi-house"></i> Home</a></li>
+                <li><a href="#"><i className="bi-info-circle"></i> About</a></li>
+                <li><a href="#"><i className="bi-cart3"></i> Our Products</a></li>
+                <li><a href="#"><i className="bi-quote"> </i>Testimonial</a></li>
+                <li><a href="#"><i className="bi-whatsapp"> </i>Contact</a></li>
+            </ul>
+            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
+             {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
+        </div>
+    </nav>
+    
     <div className='container'>
     
       <div id="posteranand" className='firstdiv' style={{ width: '700px', height: '937px', border: '1px solid #000', padding: '20px' }}>
@@ -274,8 +293,9 @@ const form = useRef();
         
     </div>
       </div>
+      
 
-
+      </>
 
   
   );
