@@ -69,7 +69,7 @@ const form = useRef();
       .then(
         () => {
           console.log('SUCCESS!');
-          window.location.replace("https://artofliving.store/");
+          window.location.replace("/");
 
         },
         (error) => {
@@ -134,7 +134,7 @@ const form = useRef();
   return (
   
       <>
-<nav class="navbar">
+<nav class="navbar fixedtop">
         <div class="navbar-container container">
             <input type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
@@ -143,11 +143,11 @@ const form = useRef();
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#"><i className="bi-house"></i> Home</a></li>
-                <li><a href="#"><i className="bi-info-circle"></i> About</a></li>
-                <li><a href="#"><i className="bi-cart3"></i> Our Products</a></li>
-                <li><a href="#"><i className="bi-quote"> </i>Testimonial</a></li>
-                <li><a href="#"><i className="bi-whatsapp"> </i>Contact</a></li>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Our Products</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}

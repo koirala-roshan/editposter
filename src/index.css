@@ -1039,3 +1039,8 @@ color: #878787;
         display: none;
     }
 }
+
+.fixedtop{
+  position: sticky;
+  top: 0;
+}

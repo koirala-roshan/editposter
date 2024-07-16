@@ -31,7 +31,7 @@ const Landing = () => {
     </Navbar>
 </div> */}
 
-<nav class="navbar">
+<nav class="navbar fixedtop">
         <div class="navbar-container container">
             <input type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
@@ -40,11 +40,11 @@ const Landing = () => {
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#"><i className="bi-house"></i> Home</a></li>
-                <li><a href="#"><i className="bi-info-circle"></i> About</a></li>
-                <li><a href="#"><i className="bi-cart3"></i> Our Products</a></li>
-                <li><a href="#"><i className="bi-quote"> </i>Testimonial</a></li>
-                <li><a href="#"><i className="bi-whatsapp"> </i>Contact</a></li>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#"> Our Products</a></li>
+                <li><a href="#">Testimonial</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
             <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
@@ -52,46 +52,7 @@ const Landing = () => {
     </nav>
 
 <div className="container mt-4">
-<Carousel data-bs-theme="dark">
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="slider1.webp"
-          alt="First slide"
-          interval={500}
-        />
-        <Carousel.Caption>
-          {/* <h5>First slide label</h5>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="slider2.webp"
-          alt="Second slide"
-          interval={500}
-        />
-        <Carousel.Caption>
-          {/* <h5>Second slide label</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="slider1.webp"
-          alt="Third slide"
-          interval={500}
-        />
-        <Carousel.Caption>
-          {/* <h5>Third slide label</h5>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p> */}
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+
 </div>
 
 <div className="container">
@@ -103,7 +64,7 @@ const Landing = () => {
       >
                 <Tab eventKey="anandutsav" title="Anand Utsav">
           <div className="container-fluid">
-            <div className="row mt-3 justify-content-center">
+            <div className="row mt-5 justify-content-center">
             <div className="justify-content-center">
             <NavLink to="/anandutsav"> <img
                   src="./design.png"
@@ -295,9 +256,48 @@ const Landing = () => {
       </Tabs>
       </div>
 
+      <Carousel data-bs-theme="dark" className="mt-5">
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider1.webp"
+          alt="First slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>First slide label</h5>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider2.webp"
+          alt="Second slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>Second slide label</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img
+          className="d-block w-100"
+          src="slider1.webp"
+          alt="Third slide"
+          interval={500}
+        />
+        <Carousel.Caption>
+          {/* <h5>Third slide label</h5>
+          <p>
+            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+          </p> */}
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
 
-
-<section className="productsection mt-5 mb-5">
+<section className="productsection mb-5">
   <br/>
   <h4 className="text-center">&lt;&lt; Explore Our Best Selling Products &gt;&gt; </h4>
 <div className="container-fluid">
