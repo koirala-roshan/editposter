@@ -248,8 +248,8 @@ const Landing = () => {
           </div> */}
         </Tab>
         <Tab eventKey="followup" title="Follow Up">
-        <p className="text-center text-danger">Coming soon...</p>
-          {/* <div className="container">
+        {/* <p className="text-center text-danger">Coming soon...</p> */}
+          <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
                 <img
@@ -271,7 +271,7 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </Tab>
 
         <Tab eventKey="satsang" title="Satsang">
