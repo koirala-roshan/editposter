@@ -264,7 +264,7 @@ const Landing = () => {
           className="d-block w-100"
           src="slider1.webp"
           alt="First slide"
-          interval={500}
+          interval={100}
         />
         <Carousel.Caption>
           {/* <h5>First slide label</h5>
@@ -276,7 +276,7 @@ const Landing = () => {
           className="d-block w-100"
           src="slider2.webp"
           alt="Second slide"
-          interval={500}
+          interval={100}
         />
         <Carousel.Caption>
           {/* <h5>Second slide label</h5>
@@ -288,7 +288,7 @@ const Landing = () => {
           className="d-block w-100"
           src="slider1.webp"
           alt="Third slide"
-          interval={500}
+          interval={100}
         />
         <Carousel.Caption>
           {/* <h5>Third slide label</h5>
