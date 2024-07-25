@@ -515,12 +515,12 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 1;
   width: 100%;
-  font-size: 25px;
+  font-size: 22px;
   text-align: left;
   top: 87.8%;
-  left: 77%;
+  left: 76%;
   transform: translate(-50%, -50%);
-  color: #1089a0;
+  color: #a44242;
   margin: 0px;
   padding: 0px;
   font-family:'gotham';
@@ -533,11 +533,11 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 0.8;
   width: 200px;
-  font-size: 20px;
+  font-size: 18px;
   bottom: 30%;
   left: 81%;
   transform: translate(-50%, -50%);
-  color: #587277;
+  color: #4f4f4f;
   margin: 0px;
   padding: 0px;
   font-family:'Gotham';
@@ -549,11 +549,11 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 0.8;
   width: 200px;
-  font-size: 20px;
+  font-size: 18px;
   bottom: 27%;
   left: 78.5%;
   transform: translate(-50%, -50%);
-  color: #587277;
+  color: #4f4f4f;
   margin: 0px;
   padding: 0px;
   font-family:'Gotham';
@@ -572,7 +572,7 @@ image-resolution: 300dpi;
   text-align: center;
   align-items: center;
   transform: translate(-50%, -50%);
-  color: #1089a0;
+  color: #a44242;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
@@ -585,11 +585,11 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 0.8;
   width: 200px;
-  font-size: 20px;
+  font-size: 18px;
   bottom: 24%;
-  left: 80%;
+  left: 78%;
   transform: translate(-50%, -50%);
-  color: #587277;
+  color: #4f4f4f;
   margin: 0px;
   padding: 0px;
   font-family:'Gotham';
@@ -615,6 +615,140 @@ image-resolution: 300dpi;
 
    
 }
+
+
+
+
+
+/* anandutsav square css */
+
+
+#posteranand2 {
+  font-family: 'gotham';
+  background-image: url(/web2.png);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+
+image-resolution: 300dpi;
+
+}
+#linkanand2 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 18px;
+  text-align: left;
+  top: 88.7%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'poppins';
+  font-weight: bold;
+
+   
+}
+#dateanand2 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 16px;
+  bottom: 29%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanand2 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 16px;
+  bottom: 25.5%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanand2 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 18px;
+  width: 200px;
+  bottom: 37.5%;
+  left: 72.3%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanand2
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 16px;
+  bottom: 22%;
+  left: 71.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanand2 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size:18px;
+  width: 100%;
+  bottom: 5%;
+  left: 47%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -749,6 +883,7 @@ margin-bottom: 14px;
 font-size: 14px;
     color: #7e7e7e;
 line-height: 28px;
+text-align:start;
 }
 .footer-social-icon span {
 color: #5e3a3a;

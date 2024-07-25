@@ -10,6 +10,7 @@ import Followup1 from './Components/Posters/followup1.jsx'
 import Happiness3 from './Components/Posters/Happiness3.jsx'
 import Anandutsav from './Components/Posters/anandutsav.jsx'
 import { ContactUs } from './Components/Posters/login.jsx'
+import Anandutsav2 from './Components/Posters/anandutsavsquare.jsx'
 
 
 
@@ -48,6 +49,11 @@ element: <Anandutsav />
 {
   path: "/contact",
 element: <ContactUs />
+}
+,
+{
+  path: "/anandutsav2",
+element: <Anandutsav2 />
 }
 
   ])

@@ -16,11 +16,11 @@ const Anandutsav = () => {
   const [link, setLink] = useState('Registration Link: aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
-  const [contact, setContact] = useState('91 9036425223');
+  const [contact, setContact] = useState('9036425223');
   const [venue, setVenue] = useState('At Art of Living International Center');
 
   //image handler
-  const [imagePreview, setImagePreview] = useState("./hp.jpg");
+  const [imagePreview, setImagePreview] = useState("./sample.jpg");
   const handleImageChange = (event) => {
     const file = event.target.files[0];
     if (file) {
@@ -124,7 +124,7 @@ const form = useRef();
 
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '135px', height: '135px', borderRadius: '50%', overflow: 'hidden', marginTop: '360px', marginLeft: '410px', border: '2px solid #1089a0', position: 'relative',},
+    imagePreviewContainer: { width: '135px', height: '135px', borderRadius: '50%', overflow: 'hidden', marginTop: '360px', marginLeft: '410px', border: '2px solid #a44242', position: 'relative',},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -237,6 +237,7 @@ const form = useRef();
               Select Teachers Photo
             
             <input type="file" accept="image/*" onChange={handleImageChange} />
+            <i><p> **Select passport size photo for best result **</p></i>
             </label>
 
         

@@ -9,27 +9,14 @@ import Button from 'react-bootstrap/Button';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 
 const Landing = () => {
   return (
     <>
-    {/* <div className="container">
-    <Navbar collapseOnSelect expand="lg" className="bg-body-white">
 
-        <Navbar.Brand>  <img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto">
-            <Nav.Link href="#features">
-         
-
-</Nav.Link>
-          </Nav>
-
-        </Navbar.Collapse>
-      
-    </Navbar>
-</div> */}
 
 <nav class="navbar fixedtop">
         <div class="navbar-container container">
@@ -55,6 +42,15 @@ const Landing = () => {
 <img src="./postermaking.png" className="img-fluid" />
 </div>
 
+
+
+
+
+
+
+
+
+
 <div className="container">
 
 
@@ -65,9 +61,10 @@ const Landing = () => {
         className="mb-3 justify-content-center ntabs"
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
-          <div className="container-fluid">
-            <div className="row mt-5 justify-content-center">
-            <div className="justify-content-center">
+                <Container>
+
+                <Row className="mt-5">
+                <Col>
             <NavLink to="/anandutsav"> <img
                   src="./design.png"
 
@@ -77,12 +74,32 @@ const Landing = () => {
                 />
                 </NavLink>
         
-              </div>
+                </Col>
+                <Col>
+            <NavLink to="/anandutsav2"> <img
+                  src="./design2.jpg"
+
+                  alt="..."
+                  height="200px"
+                  width="200px"
+                />
+                </NavLink>
+        
+                </Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
              
 
 
-            </div>
-          </div>
+              </Row>
+            </Container>
+
+
+
+
+
+
         </Tab>
         <Tab eventKey="happiness" id="hp" title="Happiness Program">
         <p className="text-center text-danger">Coming soon...</p>
@@ -301,34 +318,34 @@ const Landing = () => {
 
 <section className="productsection mb-5">
   <br/>
-<h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4>
+{/* <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4> */}
 <div className="container-fluid">
   <div className="row justify-content-center">
 
       <Card style={{ width: '15rem', height:'auto', backgroundColor:'transparent',border:'none' }}>
-      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker" target="_blank">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
+      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
     </Card>
   
 
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/talking-bhagavad-gita" target="_blank"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
+    <a href="https://artofliving.store/products/talking-bhagavad-gita"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
   
     </Card>
   
   
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel" target="_blank"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
+    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
    
     </Card>
  
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/silver-coin-pre-order-now" target="_blank"> <Card.Img variant="top" src="coin1.webp" className="mt-2 img-fluid" /></a>
+    <a href="https://artofliving.store/products/silver-coin-pre-order-now"> <Card.Img variant="top" src="coin1.webp" className="mt-2 img-fluid" /></a>
 
     </Card>
 
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/gold-coin-pre-order-now" target="_blank"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
+    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
     </Card>
   
 
@@ -353,7 +370,7 @@ const Landing = () => {
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" data-bs-parent="#accordionExample">
       <div className="accordion-body">
-        <strong>This is on the developing process.</strong> It will be fully functional soon. Omce it is completed we will notify via email or our community. <code>Be in touch</code>
+        <strong>This is on the developing process.</strong> It will be fully functional soon. Once it is completed we will notify via email or our community. <code>Be in touch</code>
       </div>
     </div>
   </div>
@@ -399,10 +416,10 @@ const Landing = () => {
             
             <div className="footer-content pt-5 pb-5">
                 <div className="row">
-                    <div className="col-xl-4 col-lg-4 mb-50">
+                    <div className="col-xl-4 col-lg-4 col-md-6 mb-30">
                         <div className="footer-widget">
-                            <div className="footer-logo">
-                            <img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/>
+                            <div className="footer-widget-heading">
+                           <h3>About Us</h3>
                             </div>
                             <div className="footer-text">
                                 <p>We promote peace through diverse humanitarian projects, including conflict resolution, disaster relief, sustainable rural development, empowerment of women, prisoner rehabilitation, education for all, and environmental sustainability.</p>
@@ -421,7 +438,7 @@ const Landing = () => {
                                 <h3>Help</h3>
                             </div>
                             <ul>
-                                <li><a href="https://artofliving.store/pages/payment" target="_blank">Payment</a></li>
+                                <li><a href="https://artofliving.store/pages/payment">Payment</a></li>
                                 <li><a href="#">Shipping</a></li>
 
                             
@@ -436,7 +453,7 @@ const Landing = () => {
                     <div className="col-xl-4 col-lg-4 col-md-6 mb-50">
                         <div className="footer-widget">
                             <div className="footer-widget-heading">
-                                <h3>About Store</h3>
+                                <h3>Sri Sri Publications Trust</h3>
                             </div>
                             <div className="footer-text mb-25">
                             <i className="bi-map"> </i><span>Bengaluru, Karnataka 560082</span>
