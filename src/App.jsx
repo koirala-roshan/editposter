@@ -11,6 +11,7 @@ import Happiness3 from './Components/Posters/Happiness3.jsx'
 import Anandutsav from './Components/Posters/anandutsav.jsx'
 import { ContactUs } from './Components/Posters/login.jsx'
 import Anandutsav2 from './Components/Posters/anandutsavsquare.jsx'
+import Anandutsav3 from './Components/Posters/anandutsavstory.jsx'
 
 
 
@@ -54,6 +55,11 @@ element: <ContactUs />
 {
   path: "/anandutsav2",
 element: <Anandutsav2 />
+}
+,
+{
+  path: "/anandutsav3",
+element: <Anandutsav3 />
 }
 
   ])

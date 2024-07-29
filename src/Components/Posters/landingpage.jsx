@@ -14,6 +14,31 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Landing = () => {
+
+  const [result, setResult] = React.useState("");
+
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    setResult("Sending....");
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "0918b791-5152-48df-8ca2-db609cbdab92");
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    });
+
+    const data = await response.json();
+
+    if (data.success) {
+      setResult("Message sent successfully!");
+      event.target.reset();
+    } else {
+      console.log("Error", data);
+      setResult(data.message);
+    }
+  };
   return (
     <>
 
@@ -27,11 +52,13 @@ const Landing = () => {
                 <span class="line line3"></span>
             </div>
             <ul class="menu-items">
-                <li><a href="#anandutsav"> Home</a></li>
-                <li><a href="#hp">About</a></li>
-                <li><a href="#"> Our Products</a></li>
-                <li><a href="#">Testimonial</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href=""> Home</a></li>
+                <li><a href="https://artofliving.store/pages/about-us">About</a></li>                 
+                <li><a href="#contactpage">Contact/Support</a></li>
+
+                <li><a href="https://artofliving.store/"> Explore Products</a></li>
+                {/* <li><a href="#">Testimonial</a></li> */}
+                {/* <li><a href="#">Contact</a></li> */}
             </ul>
             <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
@@ -63,30 +90,58 @@ const Landing = () => {
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 <Container>
 
-                <Row className="mt-5">
+                <Row className="m-5">
                 <Col>
-            <NavLink to="/anandutsav"> <img
+            <img
                   src="./design.png"
 
                   alt="..."
                   height="250px"
                   width="200px"
+                  className="mt-3"
                 />
-                </NavLink>
-        
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/anandutsav"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
                 </Col>
+
+
                 <Col>
-            <NavLink to="/anandutsav2"> <img
+    <img
                   src="./design2.jpg"
 
                   alt="..."
                   height="200px"
                   width="200px"
+                  className="mt-3"
                 />
-                </NavLink>
+                              
+                           <center>
+                             
+                             <p>Size: Square (1080*1080px)</p> 
+                             <NavLink to="/anandutsav2"> <button className="btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+                             </center>
+              
         
                 </Col>
-                <Col></Col>
+                <Col>
+                <img
+                  src="./design3.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                              
+                           
+                        <center>
+                             <p>Size: Story (1920*1080px)</p>
+                           
+                             <NavLink to="/anandutsav3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
+                </Col>
                 <Col></Col>
                 <Col></Col>
              
@@ -220,8 +275,8 @@ const Landing = () => {
           </div> */}
         </Tab>
         <Tab eventKey="followup" title="Follow Up">
-        {/* <p className="text-center text-danger">Coming soon...</p> */}
-          <div className="container">
+        <p className="text-center text-danger">Coming soon...</p>
+          {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
               <div className="card col-md-3">
                 <img
@@ -243,7 +298,7 @@ const Landing = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </Tab>
 
         <Tab eventKey="satsang" title="Satsang">
@@ -275,7 +330,80 @@ const Landing = () => {
       </Tabs>
       </div>
 
-      <Carousel indicators={false} controls={false} className="mt-5">
+  
+
+<section className="productsection">
+  <br/>
+{/* <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4> */}
+<div className="container-fluid">
+  <div className="row justify-content-center">
+
+      <Card style={{ width: '13rem', height:'auto', backgroundColor:'transparent',border:'none' }}>
+      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
+    </Card>
+  
+
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
+    <a href="https://artofliving.store/products/talking-bhagavad-gita"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
+  
+    </Card>
+  
+  
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
+    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
+   
+    </Card>
+ 
+    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
+    <a href="https://artofliving.store/products/patanjali-yoga-sutras-english-1?_pos=2&_psq=patanja&_ss=e&_v=1.0"> <Card.Img variant="top" src="patanjali.webp" className="mt-2 img-fluid" /></a>
+
+    </Card>
+
+
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/art-of-living-magazine"><Card.Img variant="top" src="magazine.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/shiva-sutra-hindi-9789380592398"><Card.Img variant="top" src="shivasutras.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+  
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/metal-pooja-stand-with-paduka"><Card.Img variant="top" src="paduka.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/art-of-living-app"><Card.Img variant="top" src="aolapp.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/gurudev-foldable-photo-frame-with-paduka-1"><Card.Img variant="top" src="foldablegurudev.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/narada-bhakti-sutra-english-9789380114279?variant=41463036575780"><Card.Img variant="top" src="naradbhakti.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/wooden-key-chain-capsule-shape"><Card.Img variant="top" src="keychain.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/ashtavakra-gita-english"><Card.Img variant="top" src="ashtavakra.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
+    <a href="https://artofliving.store/products/wonders-of-ashram-english"><Card.Img variant="top" src="WONDERS.webp" className="mt-2 img-fluid"/></a>
+    </Card>
+  
+
+    </div>
+    </div>
+    </section>
+
+
+
+
+
+    <Carousel indicators={false} controls={false} className="mb-5">
       <Carousel.Item>
         <img
           className="d-block w-100"
@@ -316,42 +444,15 @@ const Landing = () => {
       </Carousel.Item>
     </Carousel>
 
-<section className="productsection mb-5">
-  <br/>
-{/* <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4> */}
-<div className="container-fluid">
-  <div className="row justify-content-center">
-
-      <Card style={{ width: '15rem', height:'auto', backgroundColor:'transparent',border:'none' }}>
-      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
-    </Card>
-  
-
-    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/talking-bhagavad-gita"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
-  
-    </Card>
-  
-  
-    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
-   
-    </Card>
- 
-    <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/silver-coin-pre-order-now"> <Card.Img variant="top" src="coin1.webp" className="mt-2 img-fluid" /></a>
-
-    </Card>
 
 
-    <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
-    </Card>
-  
 
-    </div>
-    </div>
-    </section>
+
+
+
+
+
+
 
       {/* faq */} 
 
@@ -408,6 +509,57 @@ const Landing = () => {
 </div>
 
 
+
+
+
+
+
+
+<section className="contactpage" id="contactpage">
+<div class="container">
+  <div class="row p-5 justify-content-center">
+    <div class="col-lg-9">
+      {/* <h1 class="mb-3">Contact us</h1> */}
+      <h4 class="mb-3">If you have any queries,feel free to contact us.</h4>
+      <form onSubmit={onSubmit}>
+        <div class="row g-3">
+          <div class="col-md-12">
+            <label for="your-name" class="form-label text-white">Full Name</label>
+            <input type="name" class="form-control" id="your-name" name="name" required/>
+          </div>
+
+          <div class="col-md-12">
+            <label for="your-email" class="form-label text-white"> Email</label>
+            <input type="email" class="form-control" id="your-email" name="email" required/>
+          </div>
+
+          <div class="col-12">
+            <label for="your-message" class="form-label  text-white"> Message</label>
+            <textarea class="form-control" id="your-message" name="message" rows="5" required></textarea>
+          </div>
+          <div class="col-12 justify-content-center">
+            <div class="row justify-content-center">
+              <div class="col-md-12 justify-content-center">
+                <button type="submit" className="btn btn-success fw-bold w-100" >Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+      <span>{result}</span>
+    </div>
+  </div>
+</div>
+
+</section>
+
+
+
+
+
+
+
+
       {/* Footer */}
 
       <footer className="footer-section">
@@ -426,9 +578,9 @@ const Landing = () => {
                             </div>
                             <div className="footer-social-icon">
                                Follow us:<br/>   
-                                <a href="#"><i className="bi bi-facebook"></i></a>
-                                <a href="#"><i className="bi bi-twitter"></i></a>
-                                <a href="#"><i className=" bi bi-instagram"></i></a>
+                                <a href="https://www.facebook.com/ArtofLiving/"><i className="bi bi-facebook"></i></a>
+                                <a href="https://x.com/ArtofLiving"><i className="bi bi-twitter"></i></a>
+                                <a href="https://www.instagram.com/artofliving/?hl=en"><i className=" bi bi-instagram"></i></a>
                             </div>
                         </div>
                     </div>
@@ -439,14 +591,14 @@ const Landing = () => {
                             </div>
                             <ul>
                                 <li><a href="https://artofliving.store/pages/payment">Payment</a></li>
-                                <li><a href="#">Shipping</a></li>
+                                <li><a href="https://artofliving.store/pages/shipping">Shipping</a></li>
 
                             
-                                <li><a href="#">FAQ</a></li>
-                                <li><a href="#">Terms & Condition</a></li>
-                                <li><a href="#">Privacy Policy</a></li>
-                                <li><a href="#">Refund Policy</a></li>
-                                <li><a href="#">Terms & Service</a></li>
+                                <li><a href="https://artofliving.store/pages/cancellation-and-return-policy">Return and Cancellation</a></li>
+                                <li><a href="https://artofliving.store/pages/terms-and-conditions">Terms & Condition</a></li>
+                                <li><a href="https://artofliving.store/pages/privacy-policy">Privacy Policy</a></li>
+                                <li><a href="https://artofliving.store/pages/cancellation-and-return-policy">Refund Policy</a></li>
+                                <li><a href="https://artofliving.store/policies/terms-of-servicehttps://artofliving.store/policies/terms-of-service">Terms & Service</a></li>
                             </ul>
                         </div>
                     </div>
