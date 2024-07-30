@@ -74,11 +74,11 @@ Official Flyer Making Site
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 
-         
+         <div class="container">
                 <Tabs
       defaultActiveKey="english"
-      id="uncontrolled-tab-example newtabs"
-      className="mb-3 justify-content-center" 
+      id="uncontrolled-tab-example"
+      className="mb-3 justify-content-center newtabs" 
     >
       
 
@@ -190,7 +190,7 @@ Official Flyer Making Site
         coming
       </Tab>
     </Tabs>
-  
+    </div>
 
 
 
