@@ -87,6 +87,7 @@ Official Flyer Making Site
 
                 <Row className="m-5">
                 <Col>
+                <div>
             <img
                   src="./design.png"
 
@@ -100,10 +101,12 @@ Official Flyer Making Site
                 <NavLink to="/anandutsav"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
 
                 </center>
+                </div>
                 </Col>
 
 
                 <Col>
+                <div>
     <img
                   src="./design2.jpg"
 
@@ -119,9 +122,10 @@ Official Flyer Making Site
                              <NavLink to="/anandutsav2"> <button className="btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
                              </center>
               
-        
+       </div>
                 </Col>
                 <Col>
+                <div>
                 <img
                   src="./design3.jpg"
 
@@ -136,6 +140,7 @@ Official Flyer Making Site
                              <p>Size: Story (1920*1080px)</p>
                            
                              <NavLink to="/anandutsav3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
+                             </div>
                 </Col>
                 <Col></Col>
                 <Col></Col>
@@ -153,6 +158,7 @@ Official Flyer Making Site
         <Container>
           <Row className="m-5">
       <Col>
+      <div>
                 <img
                   src="./web1hindi.png"
 
@@ -166,7 +172,7 @@ Official Flyer Making Site
                 <NavLink to="/anandutsavhindi"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
 
                 </center>
-                
+                </div>
                 </Col>
 
                 <Col></Col>
