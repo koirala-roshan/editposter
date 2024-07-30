@@ -44,10 +44,10 @@ const Landing = () => {
 
 <div className="herobg">
   <div className="content-arrange pt-5">
-<h1 className="display-1 text-center text-white">
+<h1 className="display-2 text-center text-white">
 Official Flyer Making Site
 </h1>
-<h5 className="text-center text-white display-6">Powered by Art of Living Store</h5>
+<h3 className="text-center text-white">Powered by Art of Living Store</h3>
 </div>
 </div>
 
