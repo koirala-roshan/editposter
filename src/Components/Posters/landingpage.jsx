@@ -30,10 +30,13 @@ const Landing = () => {
             </div>
             <ul class="menu-items">
                 <li><a href=""> Home</a></li>
-                <li><a href="https://artofliving.store/pages/about-us">About</a></li>                 
-                <li><a href="#contactpage">Contact/Support</a></li>
+                <li><NavLink to="/demovideo">Demo </NavLink></li>    
 
-                <li><a href="https://artofliving.store/"> Explore Products</a></li>
+                <li><a href="https://artofliving.store/">Products</a></li>
+                <li><a href="#contactpage">Contact</a></li>
+          
+                <li><a href="https://artofliving.store/pages/about-us">About</a></li>                 
+
                 {/* <li><a href="#">Testimonial</a></li> */}
                 {/* <li><a href="#">Contact</a></li> */}
             </ul>
@@ -70,7 +73,17 @@ Official Flyer Making Site
         className="mb-3 justify-content-center ntabs"
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
-                <Container>
+                
+         
+                <Tabs
+      defaultActiveKey="english"
+      id="uncontrolled-tab-example newtabs"
+      className="mb-3 justify-content-center" 
+    >
+      
+
+      <Tab eventKey="english" title="English">
+      <Container>
 
                 <Row className="m-5">
                 <Col>
@@ -124,7 +137,22 @@ Official Flyer Making Site
                            
                              <NavLink to="/anandutsav3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
                 </Col>
-                <Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+
+                </Row>
+                </Container>
+      </Tab>
+
+
+
+
+      <Tab eventKey="hindi" title="Hindi">
+        <Container>
+          <Row className="m-5">
+      <Col>
                 <img
                   src="./web1hindi.png"
 
@@ -140,6 +168,10 @@ Official Flyer Making Site
                 </center>
                 
                 </Col>
+
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
                 <Col></Col>
              
 
@@ -147,6 +179,18 @@ Official Flyer Making Site
               </Row>
             </Container>
 
+      </Tab>
+      <Tab eventKey="kannada" title="Kannada" >
+        coming
+      </Tab>
+    </Tabs>
+  
+
+
+
+
+         
+             
 
 
 

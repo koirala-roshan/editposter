@@ -13,6 +13,7 @@ import { ContactUs } from './Components/Posters/login.jsx'
 import Anandutsav2 from './Components/Posters/anandutsavsquare.jsx'
 import Anandutsav3 from './Components/Posters/anandutsavstory.jsx'
 import Anandutsavhindi from './Components/Posters/anandutsavhindi.jsx'
+import Demovideo from './Components/Posters/demovideo.jsx'
 
 
 
@@ -65,6 +66,12 @@ element: <Anandutsav3 />
 {
   path: "/anandutsavhindi",
 element: <Anandutsavhindi />
+}
+
+,
+{
+  path: "/demovideo",
+element: <Demovideo/>
 }
 
   ])
