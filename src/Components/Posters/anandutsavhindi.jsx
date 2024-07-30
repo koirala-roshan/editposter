@@ -5,7 +5,7 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 
 
-const Anandutsav = () => {
+const Anandutsavhindi = () => {
   const [show, setShow] = useState(false);
 
  
@@ -82,7 +82,7 @@ const form = useRef();
 
   const downloadPoster = async () => {
 
-    const poster = document.getElementById('posteranand');
+    const poster = document.getElementById('posteranandhindi');
     
     if (poster,  { scale: 2 }) {
       try { 
@@ -124,7 +124,7 @@ const form = useRef();
 
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '135px', height: '135px', borderRadius: '50%', overflow: 'hidden', marginTop: '340px', marginLeft: '345px', border: '2px solid #a44242', position: 'relative',},
+    imagePreviewContainer: { width: '115px', height: '115px', borderRadius: '50%', overflow: 'hidden', marginTop: '354px', marginLeft: '345px', border: '2px solid #a44242', position: 'relative',},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -156,14 +156,14 @@ const form = useRef();
      */}
     <div className='container'>
     
-      <div id="posteranand" className='firstdiv' style={{ width: '710px', height: '888px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posteranandhindi" className='firstdiv' style={{ width: '710px', height: '889px', border: '1px solid #000', padding: '20px' }}>
 
-        <h5 id='teachersnameanand'>{Teachersname}</h5>
-        <h5 id='linkanand'>{link}</h5>
-        <h5 id='dateanand'>{date}</h5>
-        <h5 id='timeanand'>{time}</h5>
-        <h5 id='contactanand'>{contact}</h5>
-        <h5 id='venueanand'>{venue}</h5>
+        <h5 id='teachersnameanandhindi'>{Teachersname}</h5>
+        <h5 id='linkanandhindi'>{link}</h5>
+        <h5 id='dateanandhindi'>{date}</h5>
+        <h5 id='timeanandhindi'>{time}</h5>
+        <h5 id='contactanandhindi'>{contact}</h5>
+        <h5 id='venueanandhindi'>{venue}</h5>
        
         <div style={styles.container}>
       {imagePreview && (
@@ -304,4 +304,4 @@ const form = useRef();
 
 
 
-export default Anandutsav;
+export default Anandutsavhindi;

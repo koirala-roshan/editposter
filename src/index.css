@@ -523,7 +523,7 @@ image-resolution: 300dpi;
   font-size: 22px;
   text-align: left;
   top: 87.8%;
-  left: 76%;
+  left: 73.8%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
@@ -539,14 +539,14 @@ image-resolution: 300dpi;
   line-height: 0.8;
   width: 200px;
   font-size: 18px;
-  bottom: 30%;
-  left: 81%;
+  bottom: 29%;
+  left: 76.5%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
-  margin: 0px;
-  padding: 0px;
+
   font-family:'Gotham';
   letter-spacing: -0.1px;
+  direction: rtl;
    
 }
 #timeanand {
@@ -555,8 +555,8 @@ image-resolution: 300dpi;
   line-height: 0.8;
   width: 200px;
   font-size: 18px;
-  bottom: 27%;
-  left: 78.5%;
+  bottom: 26.8%;
+  left: 74%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -571,9 +571,9 @@ image-resolution: 300dpi;
   font-family:'Poppins';
   line-height: 12px;
   font-size: 22px;
-  width: 200px;
+  width: 300px;
   bottom: 39%;
-  left: 79%;
+  left: 74.5%;
   text-align: center;
   align-items: center;
   transform: translate(-50%, -50%);
@@ -592,7 +592,7 @@ image-resolution: 300dpi;
   width: 200px;
   font-size: 18px;
   bottom: 24%;
-  left: 78%;
+  left: 73.4%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -609,7 +609,7 @@ image-resolution: 300dpi;
   font-size: 22px;
   width: 100%;
   bottom: 6%;
-  left: 53%;
+  left: 49.3%;
   transform: translate(-50%, -50%);
   color: hwb(0 95% 5%);
   margin: 0px;
@@ -621,6 +621,126 @@ image-resolution: 300dpi;
    
 }
 
+/*hindi version*/
+
+
+#posteranandhindi {
+  font-family: 'gotham';
+  background-image: url(/web1hindi.png);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 22px;
+  text-align: left;
+  top: 88.4%;
+  left: 73.8%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandhindi {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 22px;
+  width: 200px;
+  bottom: 39%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandhindi
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
 
 
 
@@ -1328,4 +1448,14 @@ color: #878787;
 
 .contactpage{
   background-color: #f48a21 ;
+}
+
+.herobg
+{
+  background-color: #f48a21 ;
+  height: 260px;
+  width:100%;
+}
+.herobg h1{
+  font-family: 'DM Serif Display';
 }

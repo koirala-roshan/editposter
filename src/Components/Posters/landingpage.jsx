@@ -15,30 +15,7 @@ import Col from 'react-bootstrap/Col';
 
 const Landing = () => {
 
-  const [result, setResult] = React.useState("");
-
-  const onSubmit = async (event) => {
-    event.preventDefault();
-    setResult("Sending....");
-    const formData = new FormData(event.target);
-
-    formData.append("access_key", "0918b791-5152-48df-8ca2-db609cbdab92");
-
-    const response = await fetch("https://api.web3forms.com/submit", {
-      method: "POST",
-      body: formData
-    });
-
-    const data = await response.json();
-
-    if (data.success) {
-      setResult("Message sent successfully!");
-      event.target.reset();
-    } else {
-      console.log("Error", data);
-      setResult(data.message);
-    }
-  };
+  
   return (
     <>
 
@@ -65,8 +42,13 @@ const Landing = () => {
         </div>
     </nav>
 
-<div>
-<img src="./postermaking.png" className="img-fluid" />
+<div className="herobg">
+  <div className="content-arrange pt-5">
+<h1 className="display-1 text-center text-white">
+Official Flyer Making Site
+</h1>
+<h5 className="text-center text-white display-6">Powered by Art of Living Store</h5>
+</div>
 </div>
 
 
@@ -78,7 +60,7 @@ const Landing = () => {
 
 
 
-<div className="container">
+<div className="container mt-2">
 
 
 
@@ -142,7 +124,22 @@ const Landing = () => {
                            
                              <NavLink to="/anandutsav3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
                 </Col>
-                <Col></Col>
+                <Col>
+                <img
+                  src="./web1hindi.png"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/anandutsavhindi"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                
+                </Col>
                 <Col></Col>
              
 
@@ -403,11 +400,11 @@ const Landing = () => {
 
 
 
-    <Carousel indicators={false} controls={false} className="mb-5">
+    <Carousel indicators={false} controls={false} className="">
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="slider1.webp"
+          src="frames.webp"
           alt="First slide"
           interval={100}
         />
@@ -429,12 +426,12 @@ const Landing = () => {
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        {/* <img
           className="d-block w-100"
           src="slider1.webp"
           alt="Third slide"
           interval={100}
-        />
+        /> */}
         <Carousel.Caption>
           {/* <h5>Third slide label</h5>
           <p>
@@ -457,6 +454,21 @@ const Landing = () => {
       {/* faq */} 
 
     
+      <section className="contactpage" id="contactpage">
+<div class="container">
+  <div class="row p-4 justify-content-center">
+    <div class="col-lg-12">
+      {/* <h1 class="mb-3">Contact us</h1> */}
+      <h4 class="mb-2 text-center">For Teachers Discount on Gurudev Photo Frames/ Paintings/Prints and other Products</h4>
+  <p className="text-white text-center">
+  Call: +91 7411057770 or Email: support@artofliving.store
+    </p>
+    </div>
+  </div>
+</div>
+
+</section>
+
 
 <div className="container mt-4 mb-4"> 
   <div className="row">
@@ -512,46 +524,6 @@ const Landing = () => {
 
 
 
-
-
-
-<section className="contactpage" id="contactpage">
-<div class="container">
-  <div class="row p-5 justify-content-center">
-    <div class="col-lg-9">
-      {/* <h1 class="mb-3">Contact us</h1> */}
-      <h4 class="mb-3">If you have any queries,feel free to contact us.</h4>
-      <form onSubmit={onSubmit}>
-        <div class="row g-3">
-          <div class="col-md-12">
-            <label for="your-name" class="form-label text-white">Full Name</label>
-            <input type="name" class="form-control" id="your-name" name="name" required/>
-          </div>
-
-          <div class="col-md-12">
-            <label for="your-email" class="form-label text-white"> Email</label>
-            <input type="email" class="form-control" id="your-email" name="email" required/>
-          </div>
-
-          <div class="col-12">
-            <label for="your-message" class="form-label  text-white"> Message</label>
-            <textarea class="form-control" id="your-message" name="message" rows="5" required></textarea>
-          </div>
-          <div class="col-12 justify-content-center">
-            <div class="row justify-content-center">
-              <div class="col-md-12 justify-content-center">
-                <button type="submit" className="btn btn-success fw-bold w-100" >Send</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </form>
-      <span>{result}</span>
-    </div>
-  </div>
-</div>
-
-</section>
 
 
 
