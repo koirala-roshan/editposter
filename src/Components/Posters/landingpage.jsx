@@ -63,14 +63,14 @@ Official Flyer Making Site
 
 
 
-<div className="container mt-2">
+<div className="container">
 
 
 
       <Tabs 
         defaultActiveKey="anandutsav" 
         id="uncontrolled-tab-example"
-        className="mb-3 justify-content-center ntabs"
+        className="mb-3 justify-content-center ntabs "
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 

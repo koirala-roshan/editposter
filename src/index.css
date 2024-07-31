@@ -644,13 +644,14 @@ image-resolution: 300dpi;
   font-size: 22px;
   text-align: left;
   top: 88.4%;
-  left: 73.8%;
+  left: 78%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
   padding: 0px;
   font-family:'gotham';
   font-weight: bold;
+  direction: ltr;
 
    
 }
@@ -764,10 +765,10 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 1;
   width: 100%;
-  font-size: 24px;
+  font-size: 25px;
   text-align: left;
   top: 89.5%;
-  left: 80%;
+  left: 84%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
@@ -1342,7 +1343,7 @@ color: #878787;
 
 .ntabs
 {
-  /* background-color: #f48a21; */
+  background-color: #f48a21;
   border: none;
 
 }

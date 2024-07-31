@@ -13,7 +13,7 @@ const Anandutsavhindisquare = () => {
   const handleShow = () => setShow(true);
 
   const [Teachersname, setTeachersName] = useState('रोहित शर्मा');
-  const [link, setLink] = useState('Registration Link: aolic.org/12345');
+  const [link, setLink] = useState('रजिस्टर करें: aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('9036425223');
