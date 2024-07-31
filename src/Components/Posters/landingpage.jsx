@@ -142,7 +142,10 @@ Official Flyer Making Site
                              <NavLink to="/anandutsav3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
                              </div>
                 </Col>
-                <Col></Col>
+                <Col>
+                
+                
+                </Col>
                 <Col></Col>
                 <Col></Col>
                 <Col></Col>
@@ -175,7 +178,23 @@ Official Flyer Making Site
                 </div>
                 </Col>
 
-                <Col></Col>
+                <Col>
+                <div>
+                <img
+                  src="./web1hindi.png"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/hindisquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
                 <Col></Col>
                 <Col></Col>
                 <Col></Col>
