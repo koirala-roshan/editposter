@@ -14,8 +14,38 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Landing = () => {
-
-  
+  const MasterCreative = () => {
+    const link = document.createElement('a');
+    link.href = './English.jpg'; // Specify the file URL
+    link.download = 'Master-AnandUtsav.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreative1 = () => {
+    const link = document.createElement('a');
+    link.href = './Hindi.jpg'; // Specify the file URL
+    link.download = 'Master-AnandUtsav.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreative2 = () => {
+    const link = document.createElement('a');
+    link.href = './englishbackground.jpg'; // Specify the file URL
+    link.download = 'englishbackground.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreative3 = () => {
+    const link = document.createElement('a');
+    link.href = './hindibackground.jpg'; // Specify the file URL
+    link.download = 'hindibackground.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
 
@@ -69,8 +99,8 @@ Official Flyer Making Site
 
       <Tabs 
         defaultActiveKey="anandutsav" 
-        id="uncontrolled-tab-example"
-        className="mb-3 justify-content-center ntabs "
+        id="uncontrolled-tab-example" variant="pills"
+        className="mb-3 justify-content-center ntabs pt-3"
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 
@@ -78,7 +108,7 @@ Official Flyer Making Site
                 <Tabs
       defaultActiveKey="english"
       id="uncontrolled-tab-example"
-      className="mb-3 justify-content-center newtabs" 
+      className="mb-3  justify-content-center newtabs" 
     >
       
 
@@ -86,7 +116,10 @@ Official Flyer Making Site
       <Container>
 
                 <Row className="m-5">
+
+
                 <Col>
+                
                 <div>
             <img
                   src="./design.png"
@@ -103,6 +136,9 @@ Official Flyer Making Site
                 </center>
                 </div>
                 </Col>
+
+
+
 
 
                 <Col>
@@ -195,7 +231,24 @@ Official Flyer Making Site
                 </center>
                 </div>
                 </Col>
-                <Col></Col>
+                <Col>
+                <div>
+                <img
+                  src="./hindistory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                              
+                           
+                        <center>
+                             <p>Size: Story (1920*1080px)</p>
+                           
+                             <NavLink to="/anandutsavhindistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
+                             </div>
+                </Col>
                 <Col></Col>
                 <Col></Col>
              
@@ -205,8 +258,101 @@ Official Flyer Making Site
             </Container>
 
       </Tab>
-      <Tab eventKey="kannada" title="Kannada" >
-        coming
+
+      <Tab eventKey="master" title="Master File" >
+        <Container>
+
+ <Row>
+      <Col>
+                
+                <div>
+            <img
+                  src="./English.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreative} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col>
+                
+                <div>
+            <img
+                  src="./Hindi.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreative1} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>
+                
+              </Row>
+            </Container>
+      </Tab>
+
+
+
+      <Tab eventKey="zoom" title="Zoom Backgrounds" >
+        <Container>
+
+ <Row>
+      <Col>
+                
+                <div>
+            <img
+                  src="./englishbackground.jpg"
+
+                  alt="..."
+                  height="135px"
+                  width="240px"
+                  className="mt-3"
+                />
+             
+              <p>Size: zoom background - english (1920*1080px)</p>
+        <button onClick={MasterCreative2} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col>
+                
+                <div>
+            <img
+                  src="./hindibackground.jpg"
+
+                  alt="..."
+                  height="135px"
+                  width="240px"
+                  className="mt-3"
+                />
+             
+              <p>Size: zoom background -hindi (1920*1080px)</p>
+        <button onClick={MasterCreative3} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+              </Row>
+            </Container>
       </Tab>
     </Tabs>
     </div>
@@ -222,7 +368,7 @@ Official Flyer Making Site
 
 
         </Tab>
-        <Tab eventKey="happiness" id="hp" title="Happiness Program">
+        <Tab eventKey="happiness" id="hp" variant="pills" title="Happiness Program">
         <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container-fluid">
             <div className="row mt-3 justify-content-center">
@@ -288,7 +434,7 @@ Official Flyer Making Site
             </div>
           </div> */}
         </Tab>
-        <Tab eventKey="sahaj" title="Sahaj Samadhi Meditation">
+        <Tab eventKey="sahaj" variant="pills" title="Sahaj Samadhi Meditation">
         <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center">
@@ -314,7 +460,7 @@ Official Flyer Making Site
             </div>
           </div> */}
         </Tab>
-        <Tab eventKey="yoga" title="Sri Sri Yoga">
+        <Tab eventKey="yoga" variant="pills" title="Sri Sri Yoga">
         <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center">
@@ -340,7 +486,7 @@ Official Flyer Making Site
             </div>
           </div> */}
         </Tab>
-        <Tab eventKey="followup" title="Follow Up">
+        <Tab variant="pills" eventKey="followup" title="Follow Up">
         <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">
@@ -367,7 +513,7 @@ Official Flyer Making Site
           </div> */}
         </Tab>
 
-        <Tab eventKey="satsang" title="Satsang">
+        <Tab variant="pills" eventKey="satsang" title="Satsang">
           <p className="text-center text-danger">Coming soon...</p>
           {/* <div className="container">
             <div className="row mt-3 justify-content-center mb-3">

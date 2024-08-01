@@ -16,6 +16,7 @@ import Anandutsavhindi from './Components/Posters/anandutsavhindi.jsx'
 import Demovideo from './Components/Posters/demovideo.jsx'
 import Anandutsavhindisquare from './Components/Posters/anandutsavhindisquare.jsx'
 import Text from './Components/Posters/textfile.jsx'
+import Anandutsavhindistory from './Components/Posters/anandutsavhindistory.jsx'
 
 
 
@@ -84,6 +85,11 @@ element: <Anandutsavhindisquare />
 {
   path: "/text",
 element: <Text />
+}
+,
+{
+  path: "/anandutsavhindistory",
+element: <Anandutsavhindistory />
 }
 
 

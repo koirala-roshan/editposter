@@ -641,9 +641,9 @@ image-resolution: 300dpi;
   position: absolute;
   line-height: 1;
   width: 100%;
-  font-size: 22px;
+  font-size: 21px;
   text-align: left;
-  top: 88.4%;
+  top: 88.6%;
   left: 78%;
   transform: translate(-50%, -50%);
   color: #a44242;
@@ -1127,6 +1127,133 @@ image-resolution: 300dpi;
 
 
 
+/*anandutsavhindistory  story*/
+
+
+
+
+#posteranandstory {
+  font-family: 'gotham';
+  background-image: url(/hindistory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandstory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+  text-align: left;
+  top: 88.9%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandstory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 200px;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandstory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandstory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
 
 
 /* happiness4 */
@@ -1343,7 +1470,7 @@ color: #878787;
 
 .ntabs
 {
-  background-color: #f48a21;
+
   border: none;
 
 }
