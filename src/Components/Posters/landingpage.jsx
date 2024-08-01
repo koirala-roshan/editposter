@@ -46,6 +46,14 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const MasterCreativekannada = () => {
+    const link = document.createElement('a');
+    link.href = './kannada.jpg'; // Specify the file URL
+    link.download = 'kannada.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
   return (
     <>
 
@@ -259,6 +267,58 @@ Official Flyer Making Site
 
       </Tab>
 
+      <Tab eventKey="kannada" title="Kannada">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./kannadasquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/kannadasquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./hindistory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                              
+                           
+                        <center>
+                             <p>Size: Story (1920*1080px)</p>
+                           
+                             <NavLink to="/anandutsavhindistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
+                             </div>
+                </Col>
+                <Col></Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+
+
       <Tab eventKey="master" title="Master File" >
         <Container>
 
@@ -299,7 +359,23 @@ Official Flyer Making Site
                 
                 </div>
                 </Col>
-                <Col></Col>
+                <Col>
+                <div>
+            <img
+                  src="./kannada.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativekannada} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
                 <Col></Col>
                 <Col></Col>
                 
@@ -349,7 +425,9 @@ Official Flyer Making Site
                 
                 </div>
                 </Col>
-                <Col></Col>
+                <Col>
+                
+                </Col>
                 <Col></Col>
               </Row>
             </Container>
@@ -545,65 +623,65 @@ Official Flyer Making Site
   
 
 <section className="productsection">
-  <br/>
+
 {/* <h4 className="text-center">&lt; Explore Our Best Selling Products &gt; </h4> */}
-<div className="container-fluid">
-  <div className="row justify-content-center">
+<div className="container-fluid p-4">
+  <div className="row justify-content-center ">
 
-      <Card style={{ width: '13rem', height:'auto', backgroundColor:'transparent',border:'none' }}>
-      <a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker">  <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /> </a>
+      <Card style={{ width: '13rem', height:'13rem', backgroundColor:'transparent',border:'none' }}>
+        <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /><a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button> </a>
     </Card>
   
 
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/talking-bhagavad-gita"><Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" /> </a>
+   <Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" />  <a href="https://artofliving.store/products/talking-bhagavad-gita"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button> </a>
   
     </Card>
   
   
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"><Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/>     <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"> <button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
    
     </Card>
  
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-    <a href="https://artofliving.store/products/patanjali-yoga-sutras-english-1?_pos=2&_psq=patanja&_ss=e&_v=1.0"> <Card.Img variant="top" src="patanjali.webp" className="mt-2 img-fluid" /></a>
+ <Card.Img variant="top" src="patanjali.webp" className="mt-2 img-fluid" />    <a href="https://artofliving.store/products/patanjali-yoga-sutras-english-1?_pos=2&_psq=patanja&_ss=e&_v=1.0"> <button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
 
     </Card>
 
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/art-of-living-magazine"><Card.Img variant="top" src="magazine.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="magazine.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-magazine"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/shiva-sutra-hindi-9789380592398"><Card.Img variant="top" src="shivasutras.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="shivasutras.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/shiva-sutra-hindi-9789380592398"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
   
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/metal-pooja-stand-with-paduka"><Card.Img variant="top" src="paduka.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="paduka.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/metal-pooja-stand-with-paduka"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/art-of-living-app"><Card.Img variant="top" src="aolapp.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="aolapp.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-app"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/gurudev-foldable-photo-frame-with-paduka-1"><Card.Img variant="top" src="foldablegurudev.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="foldablegurudev.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gurudev-foldable-photo-frame-with-paduka-1"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/narada-bhakti-sutra-english-9789380114279?variant=41463036575780"><Card.Img variant="top" src="naradbhakti.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="naradbhakti.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/narada-bhakti-sutra-english-9789380114279?variant=41463036575780"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/wooden-key-chain-capsule-shape"><Card.Img variant="top" src="keychain.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="keychain.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/wooden-key-chain-capsule-shape"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/ashtavakra-gita-english"><Card.Img variant="top" src="ashtavakra.webp" className="mt-2 img-fluid"/></a>
+<Card.Img variant="top" src="ashtavakra.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/ashtavakra-gita-english"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <a href="https://artofliving.store/products/wonders-of-ashram-english"><Card.Img variant="top" src="WONDERS.webp" className="mt-2 img-fluid"/></a>
+    <Card.Img variant="top" src="WONDERS.webp" className="mt-2 img-fluid"/><a href="https://artofliving.store/products/wonders-of-ashram-english"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
     </Card>
   
 

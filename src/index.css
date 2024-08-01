@@ -867,6 +867,129 @@ image-resolution: 300dpi;
 }
 
 
+/* kannada square */
+
+
+#posteranandkannada{
+  font-family: 'gotham';
+  background-image: url(/kannadasquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandkannada {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  text-align: left;
+  top: 89.5%;
+  left: 82%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandkannada {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandkannada {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandkannada {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandkannada
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandkannada {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
 
 
 
