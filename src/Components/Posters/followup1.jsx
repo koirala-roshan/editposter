@@ -5,9 +5,10 @@ import html2canvas from 'html2canvas';
 const Followup1 = () => {
 
  
-  const [Teachersname, setTeachersName] = useState('with Rohit Dharma');
-  const [date, setDate] = useState('29 - 30 May 2024');
+  const [Teachersname, setTeachersName] = useState('with Rohit');
+  const [date, setDate] = useState('29 - 30 MAY 2024');
   const [time, setTime] = useState('7AM - 10AM');
+  const [mode, setMode] = useState('Follow up in Hindi');
  
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
 
@@ -44,7 +45,7 @@ const Followup1 = () => {
   };
   const styles = {
     container: {   display: 'flex', flexDirection: 'column'}, 
-    imagePreviewContainer: { width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', marginTop: '230px', marginLeft:'35%', border: '2px solid black', position: 'relative'},
+    imagePreviewContainer: { width: '310px', height: '310px', borderRadius: '50%', overflow: 'hidden', marginTop: '300px', marginLeft:'35.2%', border: '2px solid white', position: 'relative'},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -57,11 +58,12 @@ const Followup1 = () => {
 
     <div className='container'>
     
-      <div id="posterf" className='firstdiv' style={{ width: '525px', height: '534px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posterf" className='firstdiv' style={{ width: '1080px', height: '1080px', border: '1px solid #000', padding: '20px' }}>
       
         <h5 id='teachersnamef'>{Teachersname}<br/></h5>
         <h5 id='timef'>{time}</h5>
         <h5 id='datef'>{date}</h5>
+        <h5 id='modef'>{mode}</h5>
         <div style={styles.container}>
       {imagePreview && (
         <div style={styles.imagePreviewContainer}>
@@ -87,6 +89,13 @@ const Followup1 = () => {
                     onChange={(e) => setTeachersName(e.target.value)}
                 />
             </label>
+            <label>Mode
+                <input
+                    type="text" 
+                    value={mode}
+                    onChange={(e) => setMode(e.target.value)}
+                />
+            </label>
 
             <label>Date:
                 <input
@@ -108,6 +117,7 @@ const Followup1 = () => {
             
             <input type="file" accept="image/*" onChange={handleImageChange} />
             </label>
+            <label><i>Select passport size photo for better result</i></label>
 
         
 

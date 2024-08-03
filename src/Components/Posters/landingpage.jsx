@@ -565,30 +565,39 @@ Official Flyer Making Site
           </div> */}
         </Tab>
         <Tab variant="pills" eventKey="followup" title="Follow Up">
-        <p className="text-center text-danger">Coming soon...</p>
-          {/* <div className="container">
-            <div className="row mt-3 justify-content-center mb-3">
-              <div className="card col-md-3">
-                <img
-                  src="./followup1.jpg"
-                  className="card-img-top"
+          <Container>
+            <Row>
+        <Col>
+                
+                <div>
+            <img
+                  src="./followupnew.jpg"
+
                   alt="..."
-                                height="150"
-                  width="120rem"
+                  height="200px"
+                  width="200px"
+                  className="mt-3"
                 />
-                <div className="card-body">
-                  <h5 className="card-title">Follow Up</h5>
-                  <p className="card-text">
-                    You can edit phot, date, time, location and more in this
-                    design
-                  </p>
-                  <NavLink to="/editposter3" className="btn btn-primary">
-                    Edit this template{" "}
-                  </NavLink>
+             
+              <p>Size: Followup Square Size (1080*1080px)</p>
+              <NavLink to="/editposter3"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                
                 </div>
-              </div>
-            </div>
-          </div> */}
+                </Col>
+                <Col>
+                
+                </Col>
+
+                <Col></Col>
+                <Col></Col>
+                <Col></Col>  
+                <Col></Col>
+
+
+
+              </Row>
+            </Container>
         </Tab>
 
         <Tab variant="pills" eventKey="satsang" title="Satsang">
