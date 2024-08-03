@@ -586,7 +586,21 @@ Official Flyer Making Site
                 </div>
                 </Col>
                 <Col>
+                <div>
+            <img
+                  src="./followupnew2.jpg"
+
+                  alt="..."
+                  height="200px"
+                  width="200px"
+                  className="mt-3"
+                />
+             
+              <p>Size: Followup Square Size (1080*1080px)</p>
+              <NavLink to="/followup2"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
                 
+                </div>
                 </Col>
 
                 <Col></Col>

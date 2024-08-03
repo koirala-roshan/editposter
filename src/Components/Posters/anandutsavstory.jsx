@@ -34,11 +34,9 @@ const Anandutsav3 = () => {
 
 
 const [formData, setFormData] = useState({
-    user_name: '',
-    user_email: '',
-    user_phone: '',
-    user_code: '',
-    user_address: ''
+ 
+    user_email: ''
+
 });
 
 // State to manage button disabled state
@@ -46,8 +44,8 @@ const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
 // Effect to check if all fields are filled
 useEffect(() => {
-    const {user_name, user_email, user_phone,  user_code,user_address } = formData;
-    setIsButtonDisabled(!(user_name && user_email && user_phone && user_code && user_address));
+    const {user_email } = formData;
+    setIsButtonDisabled(!(user_email ));
 }, [formData]);
 
 // Handle input change
@@ -257,7 +255,7 @@ const form = useRef();
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>Fill these details to download poster</Modal.Title>
+          <Modal.Title>To receive the flyer, please enter your email address.</Modal.Title>
 
         </Modal.Header>
         <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p>
@@ -265,8 +263,8 @@ const form = useRef();
 
 
         <form method="post" ref={form}>
-      <label>Name</label>
-      <input type="text" placeholder="Enter your fullname" name="user_name" required value={formData.user_name} onChange={handleInputChange}  />
+      {/* <label>Name</label>
+      <input type="text" placeholder="Enter your fullname" name="user_name" required value={formData.user_name} onChange={handleInputChange}  /> */}
       <label>Email</label>
       <input type="email" placeholder="something@gmail.com" name="user_email" required value={formData.user_email} onChange={handleInputChange} />
       {/* <label>Phone</label>
