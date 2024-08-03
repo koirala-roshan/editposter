@@ -290,7 +290,7 @@ Official Flyer Making Site
                 </div>
                 </Col>
                 <Col>
-                <div>
+                {/* <div>
                 <img
                   src="./hindistory.jpg"
 
@@ -305,7 +305,7 @@ Official Flyer Making Site
                              <p>Size: Story (1920*1080px)</p>
                            
                              <NavLink to="/anandutsavhindistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
-                             </div>
+                             </div> */}
                 </Col>
                 <Col></Col>
                 <Col></Col>
@@ -620,7 +620,20 @@ Official Flyer Making Site
       </Tabs>
       </div>
 
-  
+      <section className="contactpage" id="contactpage">
+<div class="container">
+  <div class="row p-4 justify-content-center">
+    <div class="col-lg-12">
+      {/* <h1 class="mb-3">Contact us</h1> */}
+      <h4 class="mb-2 text-center">For Teachers Discount on Gurudev Photo Frames/ Paintings/Prints and other Products</h4>
+  <p className="text-white text-center">
+  Call: +91 7411057770 or Email: support@artofliving.store
+    </p>
+    </div>
+  </div>
+</div>
+
+</section>
 
 <section className="productsection">
 
@@ -692,7 +705,7 @@ Official Flyer Making Site
 
 
 
-
+{/* 
     <Carousel indicators={false} controls={false} className="">
       <Carousel.Item>
         <img
@@ -701,10 +714,10 @@ Official Flyer Making Site
           alt="First slide"
           interval={100}
         />
-        <Carousel.Caption>
+        <Carousel.Caption> */}
           {/* <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
-        </Carousel.Caption>
+        {/* </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img
@@ -713,26 +726,26 @@ Official Flyer Making Site
           alt="Second slide"
           interval={100}
         />
-        <Carousel.Caption>
+        <Carousel.Caption> */}
           {/* <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
-        </Carousel.Caption>
+        {/* </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item> */}
         {/* <img
           className="d-block w-100"
           src="slider1.webp"
           alt="Third slide"
           interval={100}
         /> */}
-        <Carousel.Caption>
+        {/* <Carousel.Caption> */}
           {/* <h5>Third slide label</h5>
           <p>
             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
           </p> */}
-        </Carousel.Caption>
+        {/* </Carousel.Caption>
       </Carousel.Item>
-    </Carousel>
+    </Carousel> */}
 
 
 
@@ -747,20 +760,6 @@ Official Flyer Making Site
       {/* faq */} 
 
     
-      <section className="contactpage" id="contactpage">
-<div class="container">
-  <div class="row p-4 justify-content-center">
-    <div class="col-lg-12">
-      {/* <h1 class="mb-3">Contact us</h1> */}
-      <h4 class="mb-2 text-center">For Teachers Discount on Gurudev Photo Frames/ Paintings/Prints and other Products</h4>
-  <p className="text-white text-center">
-  Call: +91 7411057770 or Email: support@artofliving.store
-    </p>
-    </div>
-  </div>
-</div>
-
-</section>
 
 
 <div className="container mt-4 mb-4"> 
