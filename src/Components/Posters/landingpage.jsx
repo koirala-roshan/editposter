@@ -54,6 +54,63 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
+  const MasterCreativetelegu = () => {
+    const link = document.createElement('a');
+    link.href = './telegu.jpg'; // Specify the file URL
+    link.download = 'telugu.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreativemalayalam = () => {
+    const link = document.createElement('a');
+    link.href = './malayalam.jpg'; // Specify the file URL
+    link.download = 'malayalam.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreativetamil = () => {
+    const link = document.createElement('a');
+    link.href = './tamil.jpg'; // Specify the file URL
+    link.download = 'tamil.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreativebengoli = () => {
+    const link = document.createElement('a');
+    link.href = './bengoli.jpg'; // Specify the file URL
+    link.download = 'bengali.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreativegujrati = () => {
+    const link = document.createElement('a');
+    link.href = './gujarati.jpg'; // Specify the file URL
+    link.download = 'gujrati.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+  const MasterCreativemarathi = () => {
+    const link = document.createElement('a');
+    link.href = './marathi.jpg'; // Specify the file URL
+    link.download = 'marathi.jpg'; // Specify the file name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+
+
+
+
+
+
+
+
   return (
     <>
 
@@ -88,7 +145,7 @@ const Landing = () => {
 <h1 className="display-2 text-center text-white">
 Official Flyer Making Site
 </h1>
-<h3 className="text-center text-white">Powered by Art of Living Store</h3>
+<h3 className="text-center text-white">Powered by Sri Sri Publications Trust</h3>
 </div>
 </div>
 
@@ -290,24 +347,40 @@ Official Flyer Making Site
                 </div>
                 </Col>
                 <Col>
-                {/* <div>
+                <div>
                 <img
-                  src="./hindistory.jpg"
+                  src="./kannada45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/kannada45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./kannadastory.jpg"
 
                   alt="..."
                   height="240px"
                   width="135px"
                   className="mt-3"
                 />
-                              
-                           
-                        <center>
-                             <p>Size: Story (1920*1080px)</p>
-                           
-                             <NavLink to="/anandutsavhindistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>  </center>
-                             </div> */}
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/kannadastory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
                 </Col>
-                <Col></Col>
                 <Col></Col>
              
 
@@ -316,6 +389,424 @@ Official Flyer Making Site
             </Container>
 
       </Tab>
+
+
+      <Tab eventKey="malayalam" title="Malayalam">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./malyalamsquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/malyalamsquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./malyalam45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/malyalam45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./malyalamstory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/malyalamstory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+
+      <Tab eventKey="marathi" title="Marathi">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./marathisquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/marathisquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./marathi45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/marathi45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./marathistory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/marathistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+      <Tab eventKey="gujrati" title="Gujarati">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./gujratisquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/gujratisquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./gujrati45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/gujrati45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./gujratistory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/gujratistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+      <Tab eventKey="Bengali" title="Bengali">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./bengolisquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/bengolisquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./bengoli45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/bengoli45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./bengolistory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/bengolistory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+      <Tab eventKey="tamil" title="Tamil">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./tamilsquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/tamilsquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./tamil45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/tamil45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./tamilstory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1920*1080px)</p>
+                <NavLink to="/tamilstory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+      <Tab eventKey="telegu" title="Telugu">
+        <Container>
+          <Row className="m-5">
+    
+
+                <Col>
+                <div>
+                <img
+                  src="./telegusquare.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: square (1080*1080px)</p>
+                <NavLink to="/telegusquare"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./telegu45.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="200px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1080*1350px)</p>
+                <NavLink to="/telegu45"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                </Col>
+                <Col>
+                <div>
+                <img
+                  src="./telegustory.jpg"
+
+                  alt="..."
+                  height="240px"
+                  width="135px"
+                  className="mt-3"
+                />
+                <center>
+              <p>Size: 4:5 (1920*1080px)</p>
+                <NavLink to="/telegustory"> <button className=" btn btn-primary btn-sm mb-3 w-100"> Edit</button></NavLink>
+
+                </center>
+                </div>
+                
+                </Col>
+                <Col></Col>
+             
+
+
+              </Row>
+            </Container>
+
+      </Tab>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -376,8 +867,111 @@ Official Flyer Making Site
                 
                 </div>
                 </Col>
-                <Col></Col>
-                <Col></Col>
+                <Col>
+                <div>
+            <img
+                  src="./malayalam.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativemalayalam} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                
+                </Col>
+                <Col>
+                <div>
+            <img
+                  src="./telegu.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativetelegu} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                
+                </Col>
+                <Col>
+                <div>
+            <img
+                  src="./tamil.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativetamil} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+
+                <Col>
+                <div>
+            <img
+                  src="./bengoli.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativebengoli} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col>
+                <div>
+            <img
+                  src="./marathi.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativemarathi} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
+                <Col>
+                <div>
+            <img
+                  src="./gujarati.jpg"
+
+                  alt="..."
+                  height="250px"
+                  width="250px"
+                  className="mt-3"
+                />
+             
+              <p>Size: square (1080*1080px)</p>
+        <button onClick={MasterCreativegujrati} className=" btn btn-primary btn-sm mb-3"> Download</button>
+
+                
+                </div>
+                </Col>
                 
               </Row>
             </Container>
@@ -665,59 +1259,59 @@ Official Flyer Making Site
   <div className="row justify-content-center ">
 
       <Card style={{ width: '13rem', height:'13rem', backgroundColor:'transparent',border:'none' }}>
-        <Card.Img variant="top" src="intimate.webp" className="img-fluid"  /><a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button> </a>
+        <Card.Img variant="top" src="intimate.webp" className="mt-2 img-fluid"  /><a href="https://artofliving.store/products/an-intimate-note-to-the-sincere-seeker"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button> </a>
     </Card>
   
 
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-   <Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" />  <a href="https://artofliving.store/products/talking-bhagavad-gita"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button> </a>
+   <Card.Img variant="top" src="bhagvad.webp" className="mt-2 img-fluid" />  <a href="https://artofliving.store/products/talking-bhagavad-gita"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button> </a>
   
     </Card>
   
   
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
-<Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/>     <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"> <button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="saregama.webp" className="mt-2 img-fluid"/>     <a href="https://artofliving.store/products/saregama-carvaan-mini-the-art-of-living-5w-bluetooth-speaker-saffron-orange-stereo-channel"> <button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
    
     </Card>
  
     <Card style={{ width: '13rem', height:'13rem',backgroundColor:'transparent',border:'none' }}>
- <Card.Img variant="top" src="patanjali.webp" className="mt-2 img-fluid" />    <a href="https://artofliving.store/products/patanjali-yoga-sutras-english-1?_pos=2&_psq=patanja&_ss=e&_v=1.0"> <button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+ <Card.Img variant="top" src="patanjali.webp" className="mt-2 img-fluid" />    <a href="https://artofliving.store/products/patanjali-yoga-sutras-english-1?_pos=2&_psq=patanja&_ss=e&_v=1.0"> <button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
 
     </Card>
 
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="coin2.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gold-coin-pre-order-now"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="magazine.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-magazine"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="magazine.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-magazine"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="shivasutras.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/shiva-sutra-hindi-9789380592398"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="shivasutras.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/shiva-sutra-hindi-9789380592398"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
   
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="paduka.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/metal-pooja-stand-with-paduka"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="paduka.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/metal-pooja-stand-with-paduka"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="aolapp.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-app"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="aolapp.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/art-of-living-app"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="foldablegurudev.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gurudev-foldable-photo-frame-with-paduka-1"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="foldablegurudev.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/gurudev-foldable-photo-frame-with-paduka-1"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="naradbhakti.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/narada-bhakti-sutra-english-9789380114279?variant=41463036575780"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="naradbhakti.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/narada-bhakti-sutra-english-9789380114279?variant=41463036575780"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
 
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="keychain.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/wooden-key-chain-capsule-shape"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="keychain.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/wooden-key-chain-capsule-shape"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-<Card.Img variant="top" src="ashtavakra.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/ashtavakra-gita-english"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+<Card.Img variant="top" src="ashtavakra.webp" className="mt-2 img-fluid"/>    <a href="https://artofliving.store/products/ashtavakra-gita-english"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
     <Card style={{ width: '13rem', height: '13rem',backgroundColor:'transparent',border:'none'}}>
-    <Card.Img variant="top" src="WONDERS.webp" className="mt-2 img-fluid"/><a href="https://artofliving.store/products/wonders-of-ashram-english"><button type="button" className="btn btn-primary btn-sm pt-2 w-100">Add to Cart</button></a>
+    <Card.Img variant="top" src="WONDERS.webp" className="mt-2 img-fluid"/><a href="https://artofliving.store/products/wonders-of-ashram-english"><button type="button" className="btn btn-primary btn-sm w-100">View Product</button></a>
     </Card>
   
 

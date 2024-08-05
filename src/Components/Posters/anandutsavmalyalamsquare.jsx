@@ -5,20 +5,20 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 
 
-const Anandutsavhindi = () => {
+const Anandutsavmalyalam = () => {
   const [show, setShow] = useState(false);
 
  
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('रोहित शर्मा');
-  const [link, setLink] = useState('रजिस्टर करें: aolic.org/12345');
+  const [Teachersname, setTeachersName] = useState('രാഹുൽ കൃഷ്ണൻ');
+  const [link, setLink] = useState('രജിസ്റ്റർ ചെയ്യുക : aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('9036425223');
-  const [venue, setVenue] = useState('स्थान: आर्ट ऑफ लिविंग इंटरनेशनल सेंटर');
-
+  const [venue, setVenue] = useState('സ്ഥലം: ആർട്ട് ഓഫ് ലിവിംഗ് ഇൻ്റർനാഷണൽ സെൻ്റർ');
+  
   //image handler
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
   const handleImageChange = (event) => {
@@ -34,8 +34,8 @@ const Anandutsavhindi = () => {
 
 
 const [formData, setFormData] = useState({
-
-    user_email: '',
+   
+    user_email: ''
 
 });
 
@@ -44,8 +44,8 @@ const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
 // Effect to check if all fields are filled
 useEffect(() => {
-    const { user_email } = formData;
-    setIsButtonDisabled(!( user_email ));
+    const {user_email} = formData;
+    setIsButtonDisabled(!(user_email));
 }, [formData]);
 
 // Handle input change
@@ -79,18 +79,23 @@ const form = useRef();
 //downloadpostercode
 
   const downloadPoster = async () => {
+ 
 
-    const poster = document.getElementById('posteranandhindi');
+    const poster = document.getElementById('posteranandmalyalam');
     
-    if (poster,  { scale: 2 }) {
+    if (poster) {
+    
       try { 
   
- 
+        window.devicePixelRatio = 2;
+       
         const canvas = await html2canvas(poster);
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/jpg');
+     
         link.download = 'design.jpg';
         link.click();
+
        
 
       } catch (error) {
@@ -122,7 +127,7 @@ const form = useRef();
 
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '115px', height: '115px', borderRadius: '50%', overflow: 'hidden', marginTop: '354px', marginLeft: '345px', border: '2px solid #a44242', position: 'relative',},
+    imagePreviewContainer: { width: '155px', height: '155px', borderRadius: '50%', overflow: 'hidden', marginTop: '445px', marginLeft: '412px', border: '2px solid #a44242', position: 'relative',},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -154,14 +159,14 @@ const form = useRef();
      */}
     <div className='container'>
     
-      <div id="posteranandhindi" className='firstdiv' style={{ width: '710px', height: '889px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posteranandmalyalam" className='firstdiv' style={{ width: '1080px', height: '1080px', border: '1px solid #000', padding: '20px' }}>
 
-        <h5 id='teachersnameanandhindi'>{Teachersname}</h5>
-        <h5 id='linkanandhindi'>{link}</h5>
-        <h5 id='dateanandhindi'>{date}</h5>
-        <h5 id='timeanandhindi'>{time}</h5>
-        <h5 id='contactanandhindi'>{contact}</h5>
-        <h5 id='venueanandhindi'>{venue}</h5>
+        <h5 id='teachersnameanandmalyalam'>{Teachersname}</h5>
+        <h5 id='linkanandmalyalam'>{link}</h5>
+        <h5 id='dateanandmalyalam'>{date}</h5>
+        <h5 id='timeanandmalyalam'>{time}</h5>
+        <h5 id='contactanandmalyalam'>{contact}</h5>
+        <h5 id='venueanandmalyalam'>{venue}</h5>
        
         <div style={styles.container}>
       {imagePreview && (
@@ -242,6 +247,7 @@ const form = useRef();
 
         </form>
 
+        
         {/* <button  id="button">Download Poster</button> */}
         <Button variant="primary" className='m-2' onClick={handleShow}>
         Click here to download poster
@@ -302,4 +308,4 @@ const form = useRef();
 
 
 
-export default Anandutsavhindi;
+export default Anandutsavmalyalam;

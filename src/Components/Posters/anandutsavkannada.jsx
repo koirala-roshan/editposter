@@ -12,7 +12,7 @@ const Anandutsavkannada = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('ರೋಹಿತ್ ಶರ್ಮಾ');
+  const [Teachersname, setTeachersName] = useState('ದೀಪಕ್ ಎಸ್');
   const [link, setLink] = useState('ನೋಂದಾಯಿಸಿ : aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
@@ -260,10 +260,10 @@ const form = useRef();
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>To receive the flyer, please enter your email address.</Modal.Title>
+          <Modal.Title>Please enter your email address.</Modal.Title>
 
         </Modal.Header>
-        <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p>
+        {/* <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p> */}
         <Modal.Body>
 
 

@@ -630,9 +630,9 @@ image-resolution: 300dpi;
   line-height: 1;
   width: 100%;
   font-size: 22px;
-  text-align: left;
+
   top: 87.8%;
-  left: 73.8%;
+  left:50%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
@@ -643,13 +643,13 @@ image-resolution: 300dpi;
    
 }
 #dateanand {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 18px;
   bottom: 29%;
-  left: 76.5%;
+  left: 79.5%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
 
@@ -659,13 +659,13 @@ image-resolution: 300dpi;
    
 }
 #timeanand {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 18px;
   bottom: 26.8%;
-  left: 74%;
+  left: 79.5%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -683,7 +683,7 @@ image-resolution: 300dpi;
   width: 300px;
   bottom: 39%;
   left: 74.5%;
-  text-align: center;
+
   align-items: center;
   transform: translate(-50%, -50%);
   color: #a44242;
@@ -695,13 +695,13 @@ image-resolution: 300dpi;
 }
 #contactanand
 {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 18px;
   bottom: 24%;
-  left: 73.4%;
+  left: 79.4%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -730,12 +730,12 @@ image-resolution: 300dpi;
    
 }
 
-/*hindi version*/
+/*kannada 4:5 version*/
 
 
-#posteranandhindi {
+#posteranandkannada45 {
   font-family: 'gotham';
-  background-image: url(/web1hindi.png);
+  background-image: url(/kannada45.jpg);
   width: fit-content;
  height: fit-content;
   /* background-repeat: no-repeat; */
@@ -745,15 +745,15 @@ image-resolution: 300dpi;
 image-resolution: 300dpi;
 
 }
-#linkanandhindi {
+#linkanandkannada45 {
   text-align: center;
   position: absolute;
   line-height: 1;
   width: 100%;
   font-size: 21px;
-  text-align: left;
-  top: 88.6%;
-  left: 78%;
+
+  top: 88.4%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
@@ -764,7 +764,7 @@ image-resolution: 300dpi;
 
    
 }
-#dateanandhindi {
+#dateanandkannada45 {
   text-align: center;
   position: absolute;
   line-height: 0.8;
@@ -780,7 +780,7 @@ image-resolution: 300dpi;
   letter-spacing: -0.1px;
    
 }
-#timeanandhindi {
+#timeanandkannada45 {
   text-align: center;
   position: absolute;
   line-height: 0.8;
@@ -796,7 +796,7 @@ image-resolution: 300dpi;
   letter-spacing: -0.1px;
    
 }
-#teachersnameanandhindi {
+#teachersnameanandkannada45 {
   position: absolute;
   text-align: center;
   font-family:'Poppins';
@@ -815,7 +815,7 @@ image-resolution: 300dpi;
   direction:ltr;
    
 }
-#contactanandhindi
+#contactanandkannada45
 {
   text-align: center;
   position: absolute;
@@ -833,7 +833,7 @@ image-resolution: 300dpi;
    
 }
 
-#venueanandhindi {
+#venueanandkannada45 {
   text-align: center;
   position: absolute;
   line-height: 16px;
@@ -851,6 +851,2360 @@ image-resolution: 300dpi;
 
    
 }
+
+
+/*anandutsavhindistory  story*/
+
+
+
+
+#posteranandkannadastory {
+  font-family: 'gotham';
+  background-image: url(/kannadastory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandkannadastory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandkannadastory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandkannadastory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandkannadastory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 200px;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandkannadastory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandkannadastory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+/* malyalam square */
+
+#posteranandmalyalam {
+  font-family: 'gotham';
+  background-image: url(/malyalamsquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmalyalam  {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandmalyalam  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmalyalam  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmalyalam  {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmalyalam 
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmalyalam {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*malyalam 4:5 version*/
+
+
+#posteranandmalyalam45 {
+  font-family: 'gotham';
+  background-image: url(/malyalam45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmalyalam45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandmalyalam45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmalyalam45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmalyalam45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmalyalam45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmalyalam45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavmalyalamstory  story*/
+
+
+
+
+#posteranandmalyalamstory {
+  font-family: 'gotham';
+  background-image: url(/malyalamstory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmalyalamstory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandmalyalamstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmalyalamstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmalyalamstory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmalyalamstory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmalyalamstory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
+
+
+/* marathi square */
+
+#posteranandmarathi {
+  font-family: 'gotham';
+  background-image: url(/marathisquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmarathi  {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandmarathi  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmarathi  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmarathi {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmarathi
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmarathi {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*maratho 4:5 version*/
+
+
+#posteranandmarathi45 {
+  font-family: 'gotham';
+  background-image: url(/marathi45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmarathi45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandmarathi45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmarathi45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmarathi45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmarathi45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmarathi45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavmarathistory  story*/
+
+
+
+
+#posteranandmarathistory {
+  font-family: 'gotham';
+  background-image: url(/marathistory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandmarathistory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandmarathistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandmarathistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandmarathistory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandmarathistory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandmarathistory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
+/* gujrati square */
+
+#posteranandgujrati{
+  font-family: 'gotham';
+  background-image: url(/gujratisquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandgujrati {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandgujrati  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandgujrati {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandgujrati {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandgujrati
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandgujrati {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*gujrati 4:5 version*/
+
+
+#posteranandgujrati45 {
+  font-family: 'gotham';
+  background-image: url(/gujrati45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandgujrati45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandgujrati45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandgujrati45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandgujrati45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandgujrati45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandgujrati45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavgujratistory  story*/
+
+
+
+
+#posteranandgujratistory {
+  font-family: 'gotham';
+  background-image: url(/gujratistory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandgujratistory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandgujratistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandgujratistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandgujratistory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandgujratistory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandgujratistory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
+/* bengoli square */
+
+#posteranandbengoli{
+  font-family: 'gotham';
+  background-image: url(/bengolisquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandbengoli {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandbengoli  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandbengoli {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandbengoli {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandbengoli
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandbengoli {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*bengoli 4:5 version*/
+
+
+#posteranandbengoli45 {
+  font-family: 'gotham';
+  background-image: url(/bengoli45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandbengoli45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandbengoli45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandbengoli45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandbengoli45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandbengoli45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandbengoli45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavbengolistory  story*/
+
+
+
+
+#posteranandbengolistory {
+  font-family: 'gotham';
+  background-image: url(/bengolistory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandbengolistory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandbengolistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandbengolistory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandbengolistory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandbengolistory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandbengolistory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+/* tamil square */
+
+#posteranandtamil{
+  font-family: 'gotham';
+  background-image: url(/tamilsquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtamil {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandtamil  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtamil {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtamil {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtamil
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtamil {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*tamil 4:5 version*/
+
+
+#posteranandtamil45 {
+  font-family: 'gotham';
+  background-image: url(/tamil45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtamil45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandtamil45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtamil45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtamil45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtamil45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtamil45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavtamilstory  story*/
+
+
+
+
+#posteranandtamilstory {
+  font-family: 'gotham';
+  background-image: url(/tamilstory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtamilstory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandtamilstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtamilstory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtamilstory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtamilstory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtamilstory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+/* telegu square */
+
+#posteranandtelegu{
+  font-family: 'gotham';
+  background-image: url(/telegusquare.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtelegu {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 25px;
+  top: 89.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandtelegu  {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 29%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtelegu {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 25.5%;
+  left: 68.3%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtelegu {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 25px;
+  width: 300px;
+  bottom: 37%;
+  left: 69%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtelegu
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 20px;
+  bottom: 22%;
+  left: 67.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtelegu {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 17px;
+  width: 100%;
+  bottom: 4.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*telegu 4:5 version*/
+
+
+#posteranandtelegu45 {
+  font-family: 'gotham';
+  background-image: url(/telegu45.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtelegu45 {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+
+  top: 88.4%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandtelegu45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtelegu45 {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtelegu45 {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtelegu45
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtelegu45 {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+/*anandutsavtelegustory  story*/
+
+
+
+
+#posteranandtelegustory {
+  font-family: 'gotham';
+  background-image: url(/telegustory.jpg);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandtelegustory {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 24px;
+
+  top: 88.9%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+
+   
+}
+#dateanandtelegustory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 52%;
+  left: 73%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandtelegustory {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 49.3%;
+  left: 71%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandtelegustory {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 24px;
+  width: 100%;
+  bottom: 58.7%;
+  left: 72.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandtelegustory
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 46.5%;
+  left: 70.5%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandtelegustory {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 22px;
+  width: 100%;
+  bottom: 6.7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1098,6 +3452,124 @@ image-resolution: 300dpi;
 }
 
 
+#posteranandhindi {
+  font-family: 'gotham';
+  background-image: url(/web1hindi.png);
+  width: fit-content;
+ height: fit-content;
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  position: relative;
+  image-resolution: from-image;
+image-resolution: 300dpi;
+
+}
+#linkanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 1;
+  width: 100%;
+  font-size: 21px;
+  text-align: left;
+  top: 88.6%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-family:'gotham';
+  font-weight: bold;
+  direction: ltr;
+
+   
+}
+#dateanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 30%;
+  left: 76.8%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#timeanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 27%;
+  left: 74.7%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+#teachersnameanandhindi {
+  position: absolute;
+  text-align: center;
+  font-family:'Poppins';
+  line-height: 12px;
+  font-size: 23px;
+  width: 200px;
+  bottom: 38%;
+  left: 74.5%;
+  text-align: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  color: #a44242;
+  margin: 0px;
+  padding: 0px;
+  font-weight: bold;
+  direction:ltr;
+   
+}
+#contactanandhindi
+{
+  text-align: center;
+  position: absolute;
+  line-height: 0.8;
+  width: 200px;
+  font-size: 18px;
+  bottom: 24%;
+  left: 74%;
+  transform: translate(-50%, -50%);
+  color: #4f4f4f;
+  margin: 0px;
+  padding: 0px;
+  font-family:'Gotham';
+  letter-spacing: -0.1px;
+   
+}
+
+#venueanandhindi {
+  text-align: center;
+  position: absolute;
+  line-height: 16px;
+  font-size: 15px;
+  width: 100%;
+  bottom: 5.5%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  color: hwb(0 95% 5%);
+  margin: 0px;
+  padding: 0px;
+  font-family:'Poppins';
+  letter-spacing: -0.1px;
+  /* word-spacing: -2px; */
+
+   
+}
 
 
 
@@ -1128,9 +3600,9 @@ image-resolution: 300dpi;
   line-height: 1;
   width: 100%;
   font-size: 18px;
-  text-align: left;
-  top: 88.7%;
-  left: 77%;
+
+  top: 88.6%;
+  left: 48%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
@@ -1141,13 +3613,13 @@ image-resolution: 300dpi;
    
 }
 #dateanand2 {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 16px;
   bottom: 29%;
-  left: 74%;
+  left: 78%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -1157,13 +3629,13 @@ image-resolution: 300dpi;
    
 }
 #timeanand2 {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 16px;
   bottom: 25.5%;
-  left: 72%;
+  left: 78.2%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -1181,25 +3653,24 @@ image-resolution: 300dpi;
   width: 200px;
   bottom: 37.5%;
   left: 72.3%;
-  text-align: center;
-  align-items: center;
+
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;
   padding: 0px;
   font-weight: bold;
-  direction:ltr;
+ 
    
 }
 #contactanand2
 {
-  text-align: center;
+  text-align: left;
   position: absolute;
   line-height: 0.8;
   width: 200px;
   font-size: 16px;
-  bottom: 22%;
-  left: 71.5%;
+  bottom: 22.5%;
+  left: 78%;
   transform: translate(-50%, -50%);
   color: #4f4f4f;
   margin: 0px;
@@ -1256,9 +3727,9 @@ image-resolution: 300dpi;
   line-height: 1;
   width: 100%;
   font-size: 24px;
-  text-align: left;
+
   top: 88.9%;
-  left: 75%;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #a44242;
   margin: 0px;

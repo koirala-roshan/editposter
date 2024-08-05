@@ -5,20 +5,19 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 
 
-const Anandutsavhindi = () => {
+const Anandutsavtelegu45 = () => {
   const [show, setShow] = useState(false);
 
  
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('रोहित शर्मा');
-  const [link, setLink] = useState('रजिस्टर करें: aolic.org/12345');
+  const [Teachersname, setTeachersName] = useState('রোহিত শর্মা');
+  const [link, setLink] = useState('নিবন্ধন করুন: aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('9036425223');
-  const [venue, setVenue] = useState('स्थान: आर्ट ऑफ लिविंग इंटरनेशनल सेंटर');
-
+  const [venue, setVenue] = useState('ভেন্যু: আর্ট অফ লিভিং ইন্টারন্যাশনাল সেন্টার');
   //image handler
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
   const handleImageChange = (event) => {
@@ -80,7 +79,7 @@ const form = useRef();
 
   const downloadPoster = async () => {
 
-    const poster = document.getElementById('posteranandhindi');
+    const poster = document.getElementById('posteranandtelegu45');
     
     if (poster,  { scale: 2 }) {
       try { 
@@ -154,14 +153,14 @@ const form = useRef();
      */}
     <div className='container'>
     
-      <div id="posteranandhindi" className='firstdiv' style={{ width: '710px', height: '889px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posteranandtelegu45" className='firstdiv' style={{ width: '710px', height: '889px', border: '1px solid #000', padding: '20px' }}>
 
-        <h5 id='teachersnameanandhindi'>{Teachersname}</h5>
-        <h5 id='linkanandhindi'>{link}</h5>
-        <h5 id='dateanandhindi'>{date}</h5>
-        <h5 id='timeanandhindi'>{time}</h5>
-        <h5 id='contactanandhindi'>{contact}</h5>
-        <h5 id='venueanandhindi'>{venue}</h5>
+        <h5 id='teachersnameanandtelegu45'>{Teachersname}</h5>
+        <h5 id='linkanandtelegu45'>{link}</h5>
+        <h5 id='dateanandtelegu45'>{date}</h5>
+        <h5 id='timeanandtelegu45'>{time}</h5>
+        <h5 id='contactanandtelegu45'>{contact}</h5>
+        <h5 id='venueanandtelegu45'>{venue}</h5>
        
         <div style={styles.container}>
       {imagePreview && (
@@ -302,4 +301,4 @@ const form = useRef();
 
 
 
-export default Anandutsavhindi;
+export default Anandutsavtelegu45;

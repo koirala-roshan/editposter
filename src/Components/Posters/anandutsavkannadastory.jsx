@@ -5,19 +5,19 @@ import Modal from 'react-bootstrap/Modal';
 import emailjs from '@emailjs/browser';
 
 
-const Anandutsavhindi = () => {
+const Anandutsavkannadastory = () => {
   const [show, setShow] = useState(false);
 
  
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('रोहित शर्मा');
-  const [link, setLink] = useState('रजिस्टर करें: aolic.org/12345');
+  const [Teachersname, setTeachersName] = useState('ದೀಪಕ್ ಎಸ್');
+  const [link, setLink] = useState('ನೋಂದಾಯಿಸಿ : aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('9036425223');
-  const [venue, setVenue] = useState('स्थान: आर्ट ऑफ लिविंग इंटरनेशनल सेंटर');
+  const [venue, setVenue] = useState('ಸ್ಥಳ: ಆರ್ಟ್ ಆಫ್ ಲಿವಿಂಗ್ ಇಂಟರ್ನ್ಯಾಷನಲ್ ಸೆಂಟರ್');
 
   //image handler
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
@@ -44,8 +44,8 @@ const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
 // Effect to check if all fields are filled
 useEffect(() => {
-    const { user_email } = formData;
-    setIsButtonDisabled(!( user_email ));
+    const {user_email} = formData;
+    setIsButtonDisabled(!(user_email ));
 }, [formData]);
 
 // Handle input change
@@ -80,9 +80,9 @@ const form = useRef();
 
   const downloadPoster = async () => {
 
-    const poster = document.getElementById('posteranandhindi');
+    const poster = document.getElementById('posteranandkannadastory');
     
-    if (poster,  { scale: 2 }) {
+    if (poster, {scale:2}) {
       try { 
   
  
@@ -122,7 +122,7 @@ const form = useRef();
 
   const styles = {
     container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '115px', height: '115px', borderRadius: '50%', overflow: 'hidden', marginTop: '354px', marginLeft: '345px', border: '2px solid #a44242', position: 'relative',},
+    imagePreviewContainer: { width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', marginTop: '400px', marginLeft: '366px', border: '2px solid #a44242', position: 'relative',},
     imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
   };
   
@@ -154,14 +154,14 @@ const form = useRef();
      */}
     <div className='container'>
     
-      <div id="posteranandhindi" className='firstdiv' style={{ width: '710px', height: '889px', border: '1px solid #000', padding: '20px' }}>
+      <div id="posteranandkannadastory" className='firstdiv' style={{ width: '810px', height: '1440px', border: '1px solid #000', padding: '20px' }}>
 
-        <h5 id='teachersnameanandhindi'>{Teachersname}</h5>
-        <h5 id='linkanandhindi'>{link}</h5>
-        <h5 id='dateanandhindi'>{date}</h5>
-        <h5 id='timeanandhindi'>{time}</h5>
-        <h5 id='contactanandhindi'>{contact}</h5>
-        <h5 id='venueanandhindi'>{venue}</h5>
+        <h5 id='teachersnameanandkannadastory'>{Teachersname}</h5>
+        <h5 id='linkanandkannadastory'>{link}</h5>
+        <h5 id='dateanandkannadastory'>{date}</h5>
+        <h5 id='timeanandkannadastory'>{time}</h5>
+        <h5 id='contactanandkannadastory'>{contact}</h5>
+        <h5 id='venueanandkannadastory'>{venue}</h5>
        
         <div style={styles.container}>
       {imagePreview && (
@@ -242,6 +242,7 @@ const form = useRef();
 
         </form>
 
+       
         {/* <button  id="button">Download Poster</button> */}
         <Button variant="primary" className='m-2' onClick={handleShow}>
         Click here to download poster
@@ -302,4 +303,4 @@ const form = useRef();
 
 
 
-export default Anandutsavhindi;
+export default Anandutsavkannadastory;

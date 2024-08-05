@@ -255,10 +255,10 @@ const form = useRef();
         keyboard={false}
       >
         <Modal.Header closeButton>
-          <Modal.Title>To receive the flyer, please enter your email address.</Modal.Title>
+          <Modal.Title>Please enter your email address.</Modal.Title>
 
         </Modal.Header>
-        <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p>
+        {/* <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p> */}
         <Modal.Body>
 
 
