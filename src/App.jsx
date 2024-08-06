@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import "./App.css";
 import Happiness from "./Components/Posters/Happiness.jsx";
 
@@ -40,8 +40,8 @@ import Anandutsavtelegu45 from "./Components/Posters/anandutsavtelegu45.jsx";
 import Anandutsavtelegustory from "./Components/Posters/anandutsavtelegustory.jsx";
 import Anandutsavtelegu from "./Components/Posters/anandutsavtelegusquare.jsx";
 
-function App(e) {
-  e.preventdefault();
+function App() {
+
   const router = createBrowserRouter([
     {
       path: "/editposter",
@@ -90,7 +90,7 @@ function App(e) {
 
   return (
     <div>
-      <Switch></Switch>
+   
       {/* <Landing/> */}
       {/* <Navbar />
         <Happiness />
