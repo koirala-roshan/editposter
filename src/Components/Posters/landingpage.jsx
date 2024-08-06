@@ -1,12 +1,12 @@
-import React from "react";
-
+import React, {useRef,useState, useEffect} from "react";
+import Modal from 'react-bootstrap/Modal';
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import { NavLink } from "react-router-dom";
 import Carousel from 'react-bootstrap/Carousel';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-
+import emailjs from '@emailjs/browser';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -14,7 +14,56 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
 const Landing = () => {
+
+
+
+const [formData, setFormData] = useState({
+
+    user_email: '',
+
+});
+  // State to manage button disabled state
+const [isButtonDisabled, setIsButtonDisabled] = useState(true);
+
+// Effect to check if all fields are filled
+useEffect(() => {
+    const {user_email} = formData;
+    setIsButtonDisabled(!(user_email ));
+}, [formData]);
+
+// Handle input change
+const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+        ...formData,
+        [name]: value
+    });
+};
+
+
+  //email js
+  const form = useRef();
+  const sendEmail = () => {
+    emailjs
+      .sendForm('service_tmqtsbd', 'template_m3dzzif', form.current, {
+        publicKey: 'rdStUfWtC91vQZenl',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          window.location.replace("/");
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
+
+
   const MasterCreative = () => {
+  sendEmail();
     const link = document.createElement('a');
     link.href = './English.jpg'; // Specify the file URL
     link.download = 'Master-AnandUtsav.jpg'; // Specify the file name
@@ -22,7 +71,11 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+
+
   const MasterCreative1 = () => {
+    sendEmail();
     const link = document.createElement('a');
     link.href = './Hindi.jpg'; // Specify the file URL
     link.download = 'Master-AnandUtsav.jpg'; // Specify the file name
@@ -38,6 +91,7 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
+  
   const MasterCreative3 = () => {
     const link = document.createElement('a');
     link.href = './hindibackground.jpg'; // Specify the file URL
@@ -46,6 +100,8 @@ const Landing = () => {
     link.click();
     document.body.removeChild(link);
   };
+
+
   const MasterCreativekannada = () => {
     const link = document.createElement('a');
     link.href = './kannada.jpg'; // Specify the file URL
@@ -827,9 +883,10 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreative} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email" required value={formData.user_email} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreative} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
+     
                 </div>
                 </Col>
                 <Col>
@@ -845,8 +902,8 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreative1} className=" btn btn-primary btn-sm mb-3"> Download</button>
-
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email1" required value={formData.user_email1} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreative1} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
                 
                 </div>
                 </Col>
@@ -862,9 +919,10 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativekannada} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email2" required value={formData.user_email2} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativekannada} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
+
                 </div>
                 </Col>
                 <Col>
@@ -879,9 +937,9 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativemalayalam} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email3" required value={formData.user_email3} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativemalayalam} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
                 </div>
                 
                 </Col>
@@ -897,9 +955,10 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativetelegu} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email4" required value={formData.user_email4} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativetelegu} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
+
                 </div>
                 
                 </Col>
@@ -915,7 +974,8 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativetamil} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email5" required value={formData.user_email5} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativetamil} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
                 
                 </div>
@@ -933,7 +993,8 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativebengoli} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email6" required value={formData.user_email6} onChange={handleInputChange} /> */}
+              <button onClick={MasterCreativebengoli} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
                 
                 </div>
@@ -950,9 +1011,10 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativemarathi} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email7" required value={formData.user_email7} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativemarathi} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
+
                 </div>
                 </Col>
                 <Col>
@@ -967,7 +1029,8 @@ Official Flyer Making Site
                 />
              
               <p>Size: square (1080*1080px)</p>
-        <button onClick={MasterCreativegujrati} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email8" required value={formData.user_email8} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreativegujrati} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
                 
                 </div>
@@ -996,9 +1059,10 @@ Official Flyer Making Site
                 />
              
               <p>Size: zoom background - english (1920*1080px)</p>
-        <button onClick={MasterCreative2} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email9" required value={formData.user_email9} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreative2} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
 
-                
+
                 </div>
                 </Col>
                 <Col>
@@ -1014,7 +1078,9 @@ Official Flyer Making Site
                 />
              
               <p>Size: zoom background -hindi (1920*1080px)</p>
-        <button onClick={MasterCreative3} className=" btn btn-primary btn-sm mb-3"> Download</button>
+              {/* <input type="email" placeholder="something@gmail.com" name="user_email9" required value={formData.user_email9} onChange={handleInputChange} /> */}
+        <button onClick={MasterCreative3} className=" btn btn-primary btn-sm mb-3"  disabled={isButtonDisabled}> Download</button>
+     
 
                 
                 </div>
