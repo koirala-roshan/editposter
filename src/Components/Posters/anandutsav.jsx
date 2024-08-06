@@ -251,6 +251,7 @@ const form = useRef();
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+
       >
         <Modal.Header closeButton>
           <Modal.Title>Please enter your email address.</Modal.Title>

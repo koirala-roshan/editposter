@@ -4,7 +4,7 @@ import Happiness from './Components/Posters/Happiness.jsx'
 
 import Happiness2 from './Components/Posters/Happiness2.jsx'
 import Landing from './Components/Posters/landingpage.jsx'
-
+import ScrollToTop from "react-scroll-to-top";
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'                  
 import Followup1 from './Components/Posters/followup1.jsx'
 import Happiness3 from './Components/Posters/Happiness3.jsx'
@@ -77,8 +77,8 @@ const router =createBrowserRouter([
        */}
       
          <RouterProvider router ={router}/>
+         <ScrollToTop smooth color="#f48a21" />
        
-
      
       </div>
       

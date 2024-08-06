@@ -10,7 +10,7 @@ const Demovideo = () => {
   return (
   
       <>
-<div className='containers'>
+<div className='container '>
     <h1 className='text-center pt-5 bg-primary text-white'>
         Watch the complete video
     </h1>
