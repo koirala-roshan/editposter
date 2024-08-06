@@ -1,17 +1,16 @@
-import React, { useState,useRef } from 'react';
-import html2canvas from 'html2canvas';
-
+import React, { useState, useRef } from "react";
+import html2canvas from "html2canvas";
 
 const Happiness2 = () => {
-
- 
-  const [Teachersname, setTeachersName] = useState('Rohit Dharma');
-  const [Teacherstitle, setTeacherstitle] = useState('(ArtofLiving Faculty)');
-  const [link, setLink] = useState('tiny.cc/link');
-  const [date, setDate] = useState('29-30 May 2024');
-  const [time, setTime] = useState('7AM- 10AM');
-  const [contact, setContact] = useState('Call for more information: 981053757, 9810553757');
-  const [venue, setVenue] = useState('Bangalore Ashram');
+  const [Teachersname, setTeachersName] = useState("Rohit Dharma");
+  const [Teacherstitle, setTeacherstitle] = useState("(ArtofLiving Faculty)");
+  const [link, setLink] = useState("tiny.cc/link");
+  const [date, setDate] = useState("29-30 May 2024");
+  const [time, setTime] = useState("7AM- 10AM");
+  const [contact, setContact] = useState(
+    "Call for more information: 981053757, 9810553757"
+  );
+  const [venue, setVenue] = useState("Bangalore Ashram");
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
 
   const handleImageChange = (event) => {
@@ -25,138 +24,141 @@ const Happiness2 = () => {
     }
   };
 
- 
-
-
-
   const downloadPoster2 = async () => {
-    const poster = document.getElementById('poster1');
+    const poster = document.getElementById("poster1");
     if (poster) {
-      try { 
+      try {
         const canvas = await html2canvas(poster);
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/jpg');
-        link.download = 'design2.jpg';
+        const link = document.createElement("a");
+        link.href = canvas.toDataURL("image/jpg");
+        link.download = "design2.jpg";
         link.click();
       } catch (error) {
-        console.error('Error generating canvas: ', error);
+        console.error("Error generating canvas: ", error);
       }
     } else {
-      console.error('Poster element not found');
+      console.error("Poster element not found");
     }
   };
   const styles = {
-    container: {   display: 'flex', flexDirection: 'column', alignItems: 'center'}, 
-    imagePreviewContainer: { width: '150px', height: '150px', borderRadius: '50%', overflow: 'hidden', marginTop: '83px',marginRight:'52%', border: '2px solid black', position: 'relative'},
-    imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+    imagePreviewContainer: {
+      width: "150px",
+      height: "150px",
+      borderRadius: "50%",
+      overflow: "hidden",
+      marginTop: "83px",
+      marginRight: "52%",
+      border: "2px solid black",
+      position: "relative",
+    },
+    imagePreview: { width: "100%", height: "100%", objectFit: "cover" },
   };
-  
-
-
 
   return (
-  
-      
-
-    <div className='container'>
-    
-      <div id="poster1" className='firstdiv' style={{ width: '525px', height: '534px', border: '1px solid #000', padding: '20px' }}>
-      
-        <h5 id='Teachersname1'>{Teachersname}<br/>{Teacherstitle}</h5>
+    <div className="container">
+      <div
+        id="poster1"
+        className="firstdiv"
+        style={{
+          width: "525px",
+          height: "534px",
+          border: "1px solid #000",
+          padding: "20px",
+        }}
+      >
+        <h5 id="Teachersname1">
+          {Teachersname}
+          <br />
+          {Teacherstitle}
+        </h5>
         {/* <h5 id='link'>{link}</h5>
         <h5 id='date'>{date}</h5>
         <h5 id='time'>{time}</h5>
         <h5 id='contact'>{contact}</h5> */}
-        <h5 id='contact1'>{contact}</h5>
-        <h5 id='venue1'>{venue}</h5>
-        <h5 id='time1'>{time}</h5>
-        <h5 id='date1'>{date}</h5>
+        <h5 id="contact1">{contact}</h5>
+        <h5 id="venue1">{venue}</h5>
+        <h5 id="time1">{time}</h5>
+        <h5 id="date1">{date}</h5>
         <div style={styles.container}>
-      {imagePreview && (
-        <div style={styles.imagePreviewContainer}>
-          <img src={imagePreview} alt="Preview" style={styles.imagePreview} />
+          {imagePreview && (
+            <div style={styles.imagePreviewContainer}>
+              <img
+                src={imagePreview}
+                alt="Preview"
+                style={styles.imagePreview}
+              />
+            </div>
+          )}
         </div>
-      )}
-    </div>
-       
-
       </div>
-      
-
-  
-    
-      
 
       <div className="form-container">
-      <h1 >Enter Your Details Here</h1>
+        <h1>Enter Your Details Here</h1>
         <form>
-           
-            <label>Enter Teachers Name:
-                <input
-                    type="text" 
-                    value={Teachersname}
-                    onChange={(e) => setTeachersName(e.target.value)}
-                />
-            </label>
-            <label>Enter your link:
-                <input
-                    type="text" 
-                    value={link}
-                    onChange={(e) => setLink(e.target.value)}
-                />
-            </label>
-            <label>Date:
-                <input
-                    type="text" 
-                    value={date}
-                    onChange={(e) => setDate(e.target.value)}
-                />
-            </label>
-            <label>Date:
-                <input
-                    type="text" 
-                    value={time}
-                    onChange={(e) => setTime(e.target.value)}
-                />
-            </label>
-            <label>Contact:
-                <input
-                    type="text" 
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                />
-            </label>
-            <label>Venue:
-                <input
-                    type="text" 
-                    value={venue}
-                    onChange={(e) => setVenue(e.target.value)}
-                />
-            </label>
-            <label>
-              Select Teachers Photo
-            
+          <label>
+            Enter Teachers Name:
+            <input
+              type="text"
+              value={Teachersname}
+              onChange={(e) => setTeachersName(e.target.value)}
+            />
+          </label>
+          <label>
+            Enter your link:
+            <input
+              type="text"
+              value={link}
+              onChange={(e) => setLink(e.target.value)}
+            />
+          </label>
+          <label>
+            Date:
+            <input
+              type="text"
+              value={date}
+              onChange={(e) => setDate(e.target.value)}
+            />
+          </label>
+          <label>
+            Date:
+            <input
+              type="text"
+              value={time}
+              onChange={(e) => setTime(e.target.value)}
+            />
+          </label>
+          <label>
+            Contact:
+            <input
+              type="text"
+              value={contact}
+              onChange={(e) => setContact(e.target.value)}
+            />
+          </label>
+          <label>
+            Venue:
+            <input
+              type="text"
+              value={venue}
+              onChange={(e) => setVenue(e.target.value)}
+            />
+          </label>
+          <label>
+            Select Teachers Photo
             <input type="file" accept="image/*" onChange={handleImageChange} />
-            </label>
-
-        
-
+          </label>
         </form>
-        <button  id="button" onClick={downloadPoster2}>Download Poster</button>
-    </div>
-  
-     
-
-
-
+        <button id="button" onClick={downloadPoster2}>
+          Download Poster
+        </button>
       </div>
-
-
-
-  
+    </div>
   );
 };
-
-
 
 export default Happiness2;

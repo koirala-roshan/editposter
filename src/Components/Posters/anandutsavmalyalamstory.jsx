@@ -1,23 +1,23 @@
-import React, { useState,useRef, useEffect } from 'react';
-import html2canvas from 'html2canvas';
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
-import emailjs from '@emailjs/browser';
-
+import React, { useState, useRef, useEffect } from "react";
+import html2canvas from "html2canvas";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import emailjs from "@emailjs/browser";
 
 const Anandutsavmalyalamstory = () => {
   const [show, setShow] = useState(false);
 
- 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('രാഹുൽ കൃഷ്ണൻ');
-  const [link, setLink] = useState('രജിസ്റ്റർ ചെയ്യുക : aolic.org/12345');
-  const [date, setDate] = useState('13th -16th August');
-  const [time, setTime] = useState('6:00-9:00AM');
-  const [contact, setContact] = useState('9036425223');
-  const [venue, setVenue] = useState('സ്ഥലം: ആർട്ട് ഓഫ് ലിവിംഗ് ഇൻ്റർനാഷണൽ സെൻ്റർ');
+  const [Teachersname, setTeachersName] = useState("രാഹുൽ കൃഷ്ണൻ");
+  const [link, setLink] = useState("രജിസ്റ്റർ ചെയ്യുക : aolic.org/12345");
+  const [date, setDate] = useState("13th -16th August");
+  const [time, setTime] = useState("6:00-9:00AM");
+  const [contact, setContact] = useState("9036425223");
+  const [venue, setVenue] = useState(
+    "സ്ഥലം: ആർട്ട് ഓഫ് ലിവിംഗ് ഇൻ്റർനാഷണൽ സെൻ്റർ"
+  );
 
   //image handler
   const [imagePreview, setImagePreview] = useState("./sample.jpg");
@@ -32,72 +32,63 @@ const Anandutsavmalyalamstory = () => {
     }
   };
 
+  const [formData, setFormData] = useState({
+    user_email: "",
+  });
 
-const [formData, setFormData] = useState({
+  // State to manage button disabled state
+  const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
-    user_email: '',
+  // Effect to check if all fields are filled
+  useEffect(() => {
+    const { user_email } = formData;
+    setIsButtonDisabled(!user_email);
+  }, [formData]);
 
-});
-
-// State to manage button disabled state
-const [isButtonDisabled, setIsButtonDisabled] = useState(true);
-
-// Effect to check if all fields are filled
-useEffect(() => {
-    const {user_email} = formData;
-    setIsButtonDisabled(!(user_email ));
-}, [formData]);
-
-// Handle input change
-const handleInputChange = (e) => {
+  // Handle input change
+  const handleInputChange = (e) => {
     const { name, value } = e.target;
     setFormData({
-        ...formData,
-        [name]: value
+      ...formData,
+      [name]: value,
     });
-};
+  };
 
-//emailjs code
-const form = useRef();
+  //emailjs code
+  const form = useRef();
   const sendEmail = () => {
     emailjs
-      .sendForm('service_tmqtsbd', 'template_m3dzzif', form.current, {
-        publicKey: 'rdStUfWtC91vQZenl',
+      .sendForm("service_tmqtsbd", "template_m3dzzif", form.current, {
+        publicKey: "rdStUfWtC91vQZenl",
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          console.log("SUCCESS!");
           window.location.replace("/");
-
         },
         (error) => {
-          console.log('FAILED...', error.text);
-        },
+          console.log("FAILED...", error.text);
+        }
       );
   };
 
-//downloadpostercode
+  //downloadpostercode
 
   const downloadPoster = async () => {
+    const poster = document.getElementById("posteranandmalyalamstory");
 
-    const poster = document.getElementById('posteranandmalyalamstory');
-    
-    if (poster, {scale:2}) {
-      try { 
-  
- 
+    if ((poster, { scale: 2 })) {
+      try {
         const canvas = await html2canvas(poster);
-        const link = document.createElement('a');
-        link.href = canvas.toDataURL('image/jpg');
-        link.download = 'design.jpg';
+        const link = document.createElement("a");
+        link.href = canvas.toDataURL("image/jpg");
+        link.download = "design.jpg";
         link.click();
-       
-
       } catch (error) {
-        console.error('Error generating canvas: ', error);
+        console.error("Error generating canvas: ", error);
       }
     } else {
-      console.error('Poster element not found');
+      console.error("Poster element not found");
     }
   };
 
@@ -116,23 +107,31 @@ const form = useRef();
     await downloadPoster();
     await sendEmail();
     event.preventDefault();
-    
-};
-
+  };
 
   const styles = {
-    container: {   display: 'flex', flexDirection: 'column', alignItems: 'center', margin: '20px',}, 
-    imagePreviewContainer: { width: '120px', height: '120px', borderRadius: '50%', overflow: 'hidden', marginTop: '400px', marginLeft: '366px', border: '2px solid #a44242', position: 'relative',},
-    imagePreview: { width: '100%', height: '100%', objectFit: 'cover',},
+    container: {
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      margin: "20px",
+    },
+    imagePreviewContainer: {
+      width: "120px",
+      height: "120px",
+      borderRadius: "50%",
+      overflow: "hidden",
+      marginTop: "400px",
+      marginLeft: "366px",
+      border: "2px solid #a44242",
+      position: "relative",
+    },
+    imagePreview: { width: "100%", height: "100%", objectFit: "cover" },
   };
-  
-
-
 
   return (
-  
-      <>
-{/* <nav class="navbar fixedtop">
+    <>
+      {/* <nav class="navbar fixedtop">
         <div class="navbar-container container">
             <input type="checkbox" name="" id=""/>
             <div class="hamburger-lines">
@@ -148,159 +147,155 @@ const form = useRef();
                 <li><a href="/">Contact</a></li>
             </ul>
             <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1> */}
-             {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
-        {/* </div>
+      {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
+      {/* </div>
     </nav>
      */}
-    <div className='container'>
-    
-      <div id="posteranandmalyalamstory" className='firstdiv' style={{ width: '810px', height: '1440px', border: '1px solid #000', padding: '20px' }}>
+      <div className="container">
+        <div
+          id="posteranandmalyalamstory"
+          className="firstdiv"
+          style={{
+            width: "810px",
+            height: "1440px",
+            border: "1px solid #000",
+            padding: "20px",
+          }}
+        >
+          <h5 id="teachersnameanandmalyalamstory">{Teachersname}</h5>
+          <h5 id="linkanandmalyalamstory">{link}</h5>
+          <h5 id="dateanandmalyalamstory">{date}</h5>
+          <h5 id="timeanandmalyalamstory">{time}</h5>
+          <h5 id="contactanandmalyalamstory">{contact}</h5>
+          <h5 id="venueanandmalyalamstory">{venue}</h5>
 
-        <h5 id='teachersnameanandmalyalamstory'>{Teachersname}</h5>
-        <h5 id='linkanandmalyalamstory'>{link}</h5>
-        <h5 id='dateanandmalyalamstory'>{date}</h5>
-        <h5 id='timeanandmalyalamstory'>{time}</h5>
-        <h5 id='contactanandmalyalamstory'>{contact}</h5>
-        <h5 id='venueanandmalyalamstory'>{venue}</h5>
-       
-        <div style={styles.container}>
-      {imagePreview && (
-        <div style={styles.imagePreviewContainer}>
-          <img src={imagePreview} alt="Preview" style={styles.imagePreview} />
+          <div style={styles.container}>
+            {imagePreview && (
+              <div style={styles.imagePreviewContainer}>
+                <img
+                  src={imagePreview}
+                  alt="Preview"
+                  style={styles.imagePreview}
+                />
+              </div>
+            )}
+          </div>
         </div>
-      )}
-    </div>
-       
 
-      </div>
-      
+        <div className="form-container">
+          <h1>Enter Your Details Here</h1>
+          <form>
+            <label>
+              Enter Teachers Name:
+              <input
+                type="text"
+                value={Teachersname}
+                onChange={(e) => setTeachersName(e.target.value)}
+              />
+            </label>
 
-  
-    
-      
-
-      <div className="form-container">
-      <h1>Enter Your Details Here</h1>
-        <form>
-            
-       
-            <label>Enter Teachers Name:
-                <input
-                    type="text" 
-                
-                    value={Teachersname}
-                    onChange={(e) => setTeachersName(e.target.value)}
-                />
-               
-           
-                
+            <label>
+              Enter your link:
+              <input
+                type="text"
+                value={link}
+                onChange={(e) => setLink(e.target.value)}
+              />
             </label>
-            
-            <label>Enter your link:
-                <input
-                    type="text" 
-                    value={link}
-                    onChange={(e) => setLink(e.target.value)}
-                />
+            <label>
+              Date:
+              <input
+                type="text"
+                value={date}
+                onChange={(e) => setDate(e.target.value)}
+              />
             </label>
-            <label>Date:
-                <input
-                    type="text" 
-                    value={date}
-                    onChange={(e) => setDate(e.target.value)}
-                />
+            <label>
+              Date:
+              <input
+                type="text"
+                value={time}
+                onChange={(e) => setTime(e.target.value)}
+              />
             </label>
-            <label>Date:
-                <input
-                    type="text" 
-                    value={time}
-                    onChange={(e) => setTime(e.target.value)}
-                />
+            <label>
+              Contact:
+              <input
+                type="text"
+                value={contact}
+                onChange={(e) => setContact(e.target.value)}
+              />
             </label>
-            <label>Contact:
-                <input
-                    type="text" 
-                    value={contact}
-                    onChange={(e) => setContact(e.target.value)}
-                />
-            </label>
-            <label>Venue:
-                <input
-                    type="text" 
-                    value={venue}
-                    onChange={(e) => setVenue(e.target.value)}
-                />
+            <label>
+              Venue:
+              <input
+                type="text"
+                value={venue}
+                onChange={(e) => setVenue(e.target.value)}
+              />
             </label>
             <label>
               Select Teachers Photo
-            
-            <input type="file" accept="image/*" onChange={handleImageChange} />
-            <i><p> **Select passport size photo for best result **</p></i>
+              <input
+                type="file"
+                accept="image/*"
+                onChange={handleImageChange}
+              />
+              <i>
+                <p> **Select passport size photo for best result **</p>
+              </i>
             </label>
+          </form>
 
-        
+          {/* <button  id="button">Download Poster</button> */}
+          <Button variant="primary" className="m-2" onClick={handleShow}>
+            Click here to download poster
+          </Button>
 
-        </form>
-
-       
-        {/* <button  id="button">Download Poster</button> */}
-        <Button variant="primary" className='m-2' onClick={handleShow}>
-        Click here to download poster
-      </Button>
-
-      <Modal
-        show={show}
-        onHide={handleClose}
-        backdrop="static"
-        keyboard={false}
-      >
-        <Modal.Header closeButton>
-          <Modal.Title>Please enter your email address.</Modal.Title>
-
-        </Modal.Header>
-        {/* <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p> */}
-        <Modal.Body>
-
-
-        <form method="post" ref={form}>
-      {/* <label>Name</label>
+          <Modal
+            show={show}
+            onHide={handleClose}
+            backdrop="static"
+            keyboard={false}
+          >
+            <Modal.Header closeButton>
+              <Modal.Title>Please enter your email address.</Modal.Title>
+            </Modal.Header>
+            {/* <p className='m-2'><i>Download button will be clickable once you fill up the form</i></p> */}
+            <Modal.Body>
+              <form method="post" ref={form}>
+                {/* <label>Name</label>
       <input type="text" placeholder="Enter your fullname" name="user_name" required value={formData.user_name} onChange={handleInputChange}  /> */}
-      <label>Email</label>
-      <input type="email" placeholder="something@gmail.com" name="user_email" required value={formData.user_email} onChange={handleInputChange} />
-      {/* <label>Phone</label>
+                <label>Email</label>
+                <input
+                  type="email"
+                  placeholder="something@gmail.com"
+                  name="user_email"
+                  required
+                  value={formData.user_email}
+                  onChange={handleInputChange}
+                />
+                {/* <label>Phone</label>
       <input type='number' placeholder="Please enter your contact number" name="user_phone" required value={formData.user_phone}  onChange={handleInputChange}  />
       <label>Teachers Code (Optional) </label>
       <input type='text' name="user_code" placeholder='type NA if its not available' required value={formData.user_code} onChange={handleInputChange}/>
       <label>Address</label>
       <input type='text'placeholder="Please enter your address" name="user_address" required value={formData.user_address} onChange={handleInputChange} /> */}
-      <br/>
-      
-
-    </form>
-    <input  onClick={handleButtonClick} type='submit' className='btn btn-primary' disabled={isButtonDisabled} value="Download" />
-        </Modal.Body>
-  
-      </Modal>
-
-
-
-
-
-
-
-
-
-        
-    </div>
+                <br />
+              </form>
+              <input
+                onClick={handleButtonClick}
+                type="submit"
+                className="btn btn-primary"
+                disabled={isButtonDisabled}
+                value="Download"
+              />
+            </Modal.Body>
+          </Modal>
+        </div>
       </div>
-      
-
-      </>
-
-  
+    </>
   );
 };
-
-
 
 export default Anandutsavmalyalamstory;
