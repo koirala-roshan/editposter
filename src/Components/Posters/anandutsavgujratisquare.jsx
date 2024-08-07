@@ -12,12 +12,12 @@ const Anandutsavgujrati = () => {
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
-  const [Teachersname, setTeachersName] = useState('रोहित शर्मा');
-  const [link, setLink] = useState('नोंदणी करा: aolic.org/12345');
+  const [Teachersname, setTeachersName] = useState('રોહિત શર્મા');
+  const [link, setLink] = useState('નોંધણી કરો: aolic.org/12345');
   const [date, setDate] = useState('13th -16th August');
   const [time, setTime] = useState('6:00-9:00AM');
   const [contact, setContact] = useState('9036425223');
-  const [venue, setVenue] = useState('स्थळ: आर्ट ऑफ लिव्हिंग इंटरनॅशनल सेंटर');
+  const [venue, setVenue] = useState('સ્થળ: આર્ટ ઓફ લિવિંગ ઇન્ટરનેશનલ સેન્ટર');
   
   //image handler
   const [imagePreview, setImagePreview] = useState("./sample.jpg");

@@ -171,15 +171,15 @@ const handleInputChange = (e) => {
     <>
 
 
-<nav class="navbar fixedtop">
-        <div class="navbar-container container">
+<nav className="navbar fixedtop">
+        <div className="navbar-container container">
             <input type="checkbox" name="" id=""/>
-            <div class="hamburger-lines">
-                <span class="line line1"></span>
-                <span class="line line2"></span>
-                <span class="line line3"></span>
+            <div className="hamburger-lines">
+                <span className="line line1"></span>
+                <span className="line line2"></span>
+                <span className="line line3"></span>
             </div>
-            <ul class="menu-items">
+            <ul className="menu-items">
                 <li><a href=""> Home</a></li>
                 <li><NavLink to="/demovideo">Demo </NavLink></li>    
 
@@ -191,7 +191,7 @@ const handleInputChange = (e) => {
                 {/* <li><a href="#">Testimonial</a></li> */}
                 {/* <li><a href="#">Contact</a></li> */}
             </ul>
-            <h1 class="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
+            <h1 className="logo"><img src="./logo.avif" className="img-fluid mb-1" width="100px" height="auto"/> </h1>
              {/* //<span className="dd"> Flier- Editor [Powered by SSPT]</span>  */}
         </div>
     </nav>
@@ -225,7 +225,7 @@ Official Flyer Making Site
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 
-         <div class="container">
+         <div className="container">
                 <Tabs
       defaultActiveKey="english"
       id="uncontrolled-tab-example"
@@ -1304,11 +1304,11 @@ Official Flyer Making Site
       </div>
 
       <section className="contactpage" id="contactpage">
-<div class="container">
-  <div class="row p-4 justify-content-center">
-    <div class="col-lg-12">
-      {/* <h1 class="mb-3">Contact us</h1> */}
-      <h4 class="mb-2 text-center">For Teachers Discount on Gurudev Photo Frames/ Paintings/Prints and other Products</h4>
+<div className="container">
+  <div className="row p-4 justify-content-center">
+    <div className="col-lg-12">
+      {/* <h1 className="mb-3">Contact us</h1> */}
+      <h4 className="mb-2 text-center">For Teachers Discount on Gurudev Photo Frames/ Paintings/Prints and other Products</h4>
   <p className="text-white text-center">
   Call: +91 7411057770 or Email: support@artofliving.store
     </p>

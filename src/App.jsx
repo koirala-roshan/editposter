@@ -39,7 +39,7 @@ import Anandutsavtamil from "./Components/Posters/anandutsavtamilsquare.jsx";
 import Anandutsavtelegu45 from "./Components/Posters/anandutsavtelegu45.jsx";
 import Anandutsavtelegustory from "./Components/Posters/anandutsavtelegustory.jsx";
 import Anandutsavtelegu from "./Components/Posters/anandutsavtelegusquare.jsx";
-
+// import { Route, Switch } from 'react-router-dom';
 function App() {
 
   const router = createBrowserRouter([
@@ -90,7 +90,46 @@ function App() {
 
   return (
     <div>
-   
+      {/* <Switch>
+      <Route exact path="/" component={Landing} />
+      <Route path="/editposter2" component={Happiness2} />
+      <Route path="/editposter3" component={Followup1} />
+      <Route path="/editposter4" component={Happiness3} />
+      <Route path="/anandutsav" component={Anandutsav} />
+      <Route path="/contact" component={ContactUs} />
+      <Route path="/anandutsav2" component={Anandutsav2} />
+      <Route path="/anandutsav3" component={Anandutsav3} />
+      <Route path="/anandutsavhindi" component={Anandutsavhindi} />
+      <Route path="/demovideo" component={Demovideo} />
+      <Route path="/hindisquare" component={Anandutsavhindisquare} />
+      <Route path="/text" component={Text} />
+      <Route path="/anandutsavhindistory" component={Anandutsavhindistory} />
+      <Route path="/kannadasquare" component={Anandutsavkannada} />
+      <Route path="/kannada45" component={Anandutsavkannada45} />
+      <Route path="/kannadastory" component={Anandutsavkannadastory} />
+      <Route path="/malyalam45" component={Anandutsavmalayalam45} />      
+      <Route path="/malyalamstory" component={Anandutsavmalyalamstory} />
+      <Route path="/malyalamsquare" component={Anandutsavmalyalam} />
+      <Route path="/marathi45" component={Anandutsavmarathi45} />
+      <Route path="/marathistory" component={Anandutsavmarathistory} />
+      <Route path="/marathisquare" component={Anandutsavmarathi} />
+      <Route path="/gujrati45" component={Anandutsavgujrati45} />
+      <Route path="/gujratistory" component={Anandutsavgujratistory} />
+      <Route path="/gujratisquare" component={Anandutsavgujrati} />
+      <Route path="/bengoli45" component={Anandutsavbengoli45} />
+      <Route path="/bengolistory" component={Anandutsavbengolistory} />
+      <Route path="/bengolisquare" component={Anandutsavbengoli} />
+      <Route path="/tamil45" component={Anandutsavtamil45} />
+      <Route path="/tamilstory" component={Anandutsavtamilstory} />
+      <Route path="/tamilsquare" component={Anandutsavtamil} />
+      <Route path="/telegu45" component={Anandutsavtelegu45} />
+      <Route path="/telegustory" component={Anandutsavtelegustory} />      
+      <Route path="/telegusquare" component={Anandutsavtelegu} />
+
+
+
+      </Switch>
+    */}
       {/* <Landing/> */}
       {/* <Navbar />
         <Happiness />
