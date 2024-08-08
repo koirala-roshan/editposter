@@ -198,7 +198,7 @@ const handleInputChange = (e) => {
 
 <div className="herobg">
   <div className="content-arrange pt-5">
-<h1 className="display-2 text-center text-white">
+<h1 className="display-2 text-center text-white text1">
 Official Flyer Making Site
 </h1>
 <h3 className="text-center text-white">Powered by Sri Sri Publications Trust</h3>
