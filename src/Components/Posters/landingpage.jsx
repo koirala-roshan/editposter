@@ -222,6 +222,14 @@ Official Flyer Making Site
         defaultActiveKey="anandutsav" 
         id="uncontrolled-tab-example" variant="pills"
         className="mb-3 justify-content-center ntabs pt-3"
+        style={
+          {
+
+           
+
+          }
+        }
+         
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 
