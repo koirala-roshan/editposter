@@ -4180,11 +4180,22 @@ color: #878787;
 }
 
 .nav-link.active {
-  color: rgb(255, 255, 255) !important;
-  background-color: #f48a21 !important;
+  color: rgb(0, 38, 255) !important;
+
 }
 .nav-link{
-  color: #000000;
+  color: #ffffff;
+  background-color: #f48a21 !important;
+  margin-left: 20px;
+ 
+}
+.container-fluid .nav-link{
+
+  background-color: #ececec !important;
+  color: #000;
+  margin-left: 20px;
+  margin:0;
+ 
 }
 
 .ntabs {
