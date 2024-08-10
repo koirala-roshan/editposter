@@ -1397,13 +1397,13 @@ Official Flyer Making Site
 
 
 
-    <Carousel indicators={false} controls={false} className="">
+    <Carousel indicators={false} controls className="">
       <Carousel.Item>
         <img
           className="d-block w-100"
           src="rakhi.webp"
           alt="First slide"
-          interval={100}
+          interval={900}
         />
         <Carousel.Caption> 
           {/* <h5>First slide label</h5>
@@ -1415,7 +1415,7 @@ Official Flyer Making Site
           className="d-block w-100"
           src="universe.webp"
           alt="Second slide"
-          interval={100}
+          interval={900}
         />
         <Carousel.Caption> 
           {/* <h5>Second slide label</h5>
@@ -1427,7 +1427,7 @@ Official Flyer Making Site
           className="d-block w-100"
           src="rakhi.webp"
           alt="Third slide"
-          interval={100}
+          interval={900}
         /> 
          <Carousel.Caption> 
           {/* <h5>Third slide label</h5>
