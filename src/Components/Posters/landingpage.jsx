@@ -1399,36 +1399,40 @@ Official Flyer Making Site
 
     <Carousel indicators={false} controls className="">
       <Carousel.Item>
-        <img
+       <a href="https://artofliving.store/products/silver-rakhi"> <img
           className="d-block w-100"
           src="rakhi.webp"
           alt="First slide"
           interval={900}
         />
+        </a>
         <Carousel.Caption> 
           {/* <h5>First slide label</h5>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img
+        <a href="https://artofliving.store/products/u-the-universe"><img
           className="d-block w-100"
           src="universe.webp"
           alt="Second slide"
           interval={900}
         />
+        </a>
         <Carousel.Caption> 
           {/* <h5>Second slide label</h5>
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> */}
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item> 
+        <a href="https://artofliving.store/products/silver-rakhi">
        <img
           className="d-block w-100"
           src="rakhi.webp"
           alt="Third slide"
           interval={900}
         /> 
+        </a>
          <Carousel.Caption> 
           {/* <h5>Third slide label</h5>
           <p>
