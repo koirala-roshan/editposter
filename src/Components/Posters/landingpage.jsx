@@ -225,7 +225,7 @@ Official Flyer Making Site
       >
                 <Tab eventKey="anandutsav" id="anandutsav" title="Anand Utsav">
                 
-         <div className="container">
+         <div className="container-fluid">
                 <Tabs
       defaultActiveKey="english"
       id="uncontrolled-tab-example"

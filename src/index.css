@@ -4176,7 +4176,16 @@ color: #878787;
 
   border: none;
 
+
 }
+.nav-tabs .nav-item .nav-link.active {
+  color: #ff7300;
+}
+.nav-tabs .nav-item .nav-link {
+  color: #000000;
+}
+
+
 .ntabs:hover
 {
   border: none;
@@ -4423,6 +4432,6 @@ color: #878787;
 .newtabs
 {
  
-  background-color: rgb(237, 251, 255);
+  background-color: rgb(238, 238, 238);
 }
 
